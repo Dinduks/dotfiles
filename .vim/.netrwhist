@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/dinduks/workspace/www/coversarchives'
+let g:netrw_dirhist_2='/home/dinduks/workspace/www/coversarchives/app'
+let g:netrw_dirhist_3='/home/dinduks/workspace/www/coversarchives/app/controllers'
+let g:netrw_dirhist_4='/home/dinduks/workspace/www/coversarchives'
+let g:netrw_dirhist_5='/home/dinduks/.vim'
+let g:netrw_dirhist_6='/home/dinduks/workspace/www/ChaoticCard'
+let g:netrw_dirhist_7='/home/dinduks/workspace/www/coversarchives/spec'

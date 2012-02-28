@@ -1,0 +1,18 @@
+[user]
+	name = Samy Dindane
+	email = samy@dindane.com
+[github]
+	user = dinduks
+	token = nothing to see here, move along
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+[color]
+	ui = auto
+[core]
+	editor = vim
+[color "status"]
+	added = white
+	changed = green
+	untracked = cyan
