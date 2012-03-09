@@ -1,6 +1,8 @@
+call pathogen#infect()
+
 set number
 set autoindent
-
+filetype plugin indent on
 set t_Co=256
 syntax enable
 colorscheme Monokai
