@@ -6,6 +6,7 @@ alias sshad="ssh dinduks@ssh.alwaysdata.com"
 alias pac="php app/console"
 alias ll="ls -alh"
 alias g="git"
+alias rs="bundle exec rails server"
 
 [[ -s "/home/dinduks/.rvm/scripts/rvm" ]] && source "/home/dinduks/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
