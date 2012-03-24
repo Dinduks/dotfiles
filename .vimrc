@@ -6,6 +6,8 @@ filetype plugin indent on
 set t_Co=256
 syntax enable
 colorscheme Monokai
+hi Normal ctermbg=none
+set mouse=a
 
 set encoding=utf-8
 set fileencoding=utf-8
