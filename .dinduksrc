@@ -5,5 +5,8 @@ alias pac="php app/console"
 alias s="./symfony"
 alias ll="ls -alh"
 alias rs="bundle exec rails server"
+alias grep="grep --color=auto"
+alias rgrep="rgrep --color=auto"
 
+export EDITOR=/usr/bin/vim
 TERM=xterm-color; export TERM
