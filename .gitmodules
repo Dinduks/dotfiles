@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/phpdoc.vim"]
 	path = .vim/bundle/phpdoc.vim
 	url = https://github.com/vexxor/phpdoc.vim.git
+[submodule ".vim/bundle/localvimrc"]
+	path = .vim/bundle/localvimrc
+	url = https://github.com/vim-scripts/localvimrc.git
