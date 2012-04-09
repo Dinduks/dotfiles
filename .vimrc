@@ -6,7 +6,6 @@ filetype plugin indent on
 set t_Co=256
 syntax enable
 colorscheme Monokai
-hi Normal ctermbg=none
 set mouse=a
 
 set encoding=utf-8
@@ -27,3 +26,7 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 " Save swap files in a temp directory
 set backupdir=~/.tmp,/var/tmp,/tmp
 set directory=~/.tmp,/var/tmp,/tmp
+
+" Automatically loads any .lvimrc (local vimrc) file
+" Doesn't throw an error if the file doesn't exist
+silent! source .lvimrc
