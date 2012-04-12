@@ -19,6 +19,7 @@ set tabstop=2
 " Keybindings
 map <F7> gT
 map <F8> gt
+map <F9> :NERDTreeToggle<CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR> 
