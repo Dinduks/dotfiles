@@ -1,24 +1,24 @@
 [user]
-	name        = Samy Dindane
-	email       = samy@dindane.com
+  name        = Samy Dindane
+  email       = samy@dindane.com
 [github]
-	user        = dinduks
-	token       = nothing to see here, move along
+  user        = dinduks
+  token       = nothing to see here, move along
 [alias]
-	st          = status
-	ci          = commit
-	co          = checkout
-	s           = submodule
+  st          = status
+  ci          = commit
+  co          = checkout
+  s           = submodule
   br          = branch
   rb          = rebase
   diffs       = diff --staged
   lg          = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
   lga         = log --all --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
 [color]
-	ui          = auto
+  ui          = auto
   branch      = auto
   diff        = auto
   status      = auto
   interactive = auto
 [core]
-	editor      = vim
+  editor      = vim

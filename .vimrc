@@ -2,12 +2,14 @@ call pathogen#infect()
 
 set number
 set autoindent
+set cursorline
 filetype plugin indent on
 set t_Co=256
 syntax enable
 colorscheme Monokai
 set mouse=a
 
+set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
 
@@ -15,6 +17,7 @@ set autoindent
 set expandtab
 set shiftwidth=2
 set tabstop=2
+set shiftround
 
 " Keybindings
 map <F7> gT
