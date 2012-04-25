@@ -4,9 +4,11 @@ set number
 set autoindent
 set cursorline
 filetype plugin indent on
+let g:solarized_termcolors=256
 set t_Co=256
 syntax enable
-colorscheme Monokai
+set background=dark
+colorscheme solarized
 set mouse=a
 
 set ff=unix
