@@ -1,9 +1,7 @@
 call pathogen#infect()
 
 set number
-set autoindent
 set cursorline
-filetype plugin indent on
 let g:solarized_termcolors=256
 set t_Co=256
 syntax enable
@@ -14,8 +12,11 @@ set mouse=a
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
+set listchars=trail:◃,nbsp:•
+set list
 
 set autoindent
+filetype plugin indent on
 set expandtab
 set shiftwidth=2
 set tabstop=2
