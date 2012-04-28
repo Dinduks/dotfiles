@@ -26,6 +26,8 @@ set shiftround
 map <F7> gT
 map <F8> gt
 map <F9> :NERDTreeToggle<CR>
+map <F5> :tabnew<CR>
+map <F6> :tabclose<CR>
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR> 
