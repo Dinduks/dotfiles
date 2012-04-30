@@ -8,6 +8,7 @@ alias ll="ls -alh"
 alias rs="bundle exec rails server"
 alias grep="grep --color=auto"
 alias rgrep="rgrep --color=auto"
+alias rspec="rspec --color"
 
 export EDITOR=/usr/bin/vim
 TERM=xterm-color; export TERM
