@@ -1,9 +1,6 @@
 [user]
   name        = Dinduks
   email       = samy@dindane.com
-[github]
-  user        = dinduks
-  token       = nothing to see here, move along
 [alias]
   st          = status
   ci          = commit
