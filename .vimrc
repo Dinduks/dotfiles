@@ -23,14 +23,15 @@ set tabstop=2
 set shiftround
 
 " Keybindings
+map <F4> :call FutureShock()<CR>
+map <F5> :tabnew<CR>
+map <F6> :tabclose<CR>
 map <F7> gT
 map <F8> gt
 map <F9> :NERDTreeToggle<CR>
-map <F5> :tabnew<CR>
-map <F6> :tabclose<CR>
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
-nnoremap <C-P> :call PhpDocSingle()<CR> 
-vnoremap <C-P> :call PhpDocRange()<CR> 
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR>
 map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
 map <S-E> <Plug>CamelCaseMotion_e
@@ -42,3 +43,10 @@ set directory=~/.tmp,/var/tmp,/tmp
 " Automatically loads any .lvimrc (local vimrc) file
 " Doesn't throw an error if the file doesn't exist
 silent! source .lvimrc
+
+" Remove trailing whitespaces and replace tabs with spaces
+" TODO: Replace a single tab with a number of spaces equal to the current tabstop value
+function! FutureShock()
+  silent! %s/\t/  /g
+  silent! %s/\s\+$//g
+endfunction
