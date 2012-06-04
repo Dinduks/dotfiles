@@ -2,12 +2,15 @@ call pathogen#infect()
 
 set number
 set cursorline
-let g:solarized_termcolors=256
 set t_Co=256
-syntax enable
 set background=dark
-colorscheme solarized
 set mouse=a
+colorscheme solarized
+let g:solarized_termcolors=256
+
+syntax enable
+filetype plugin indent on
+au BufNewFile,BufRead *.html.twig set filetype=htmldjango
 
 set ff=unix
 set encoding=utf-8
@@ -16,7 +19,6 @@ set listchars=trail:◃,nbsp:•
 set list
 
 set autoindent
-filetype plugin indent on
 set expandtab
 set shiftwidth=2
 set tabstop=2
@@ -41,9 +43,10 @@ set directory=~/.tmp,/var/tmp,/tmp
 " Doesn't throw an error if the file doesn't exist
 silent! source .lvimrc
 
-" Remove trailing whitespaces and replace tabs with spaces
+" Remove trailing whitespaces, replace tabs and non-breaking spaces with spaces
 " TODO: Replace a single tab with a number of spaces equal to the current tabstop value
 function! FutureShock()
   silent! %s/\t/  /g
+  silent! %s/\%u00a0/  /g
   silent! %s/\s\+$//g
 endfunction
