@@ -25,6 +25,7 @@ set tabstop=2
 set shiftround
 
 " Keybindings
+map <F3> :!clear && ruby %<CR> " execute the current ruby file
 map <F4> :call FutureShock()<CR>
 map <F5> :tabnew<CR>
 map <F6> :tabclose<CR>
