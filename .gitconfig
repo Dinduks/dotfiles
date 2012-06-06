@@ -19,3 +19,5 @@
   interactive = auto
 [core]
   editor      = vim
+[push]
+  default     = tracking
