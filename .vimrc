@@ -48,6 +48,6 @@ silent! source .lvimrc
 " TODO: Replace a single tab with a number of spaces equal to the current tabstop value
 function! FutureShock()
   silent! %s/\t/  /g
-  silent! %s/\%u00a0/  /g
+  silent! %s/\%u00a0/ /g
   silent! %s/\s\+$//g
 endfunction
