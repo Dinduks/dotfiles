@@ -11,6 +11,7 @@ let g:solarized_termcolors=256
 syntax enable
 filetype plugin indent on
 au BufNewFile,BufRead *.html.twig set filetype=htmldjango
+au BufNewFile,BufRead *.rst.inc   set filetype=rst
 
 set ff=unix
 set encoding=utf-8
