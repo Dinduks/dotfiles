@@ -29,7 +29,6 @@ au FocusLost *:wa " Automatically save files on focus lost
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
-set paste
 
 " Tabs & co
 filetype plugin indent on
