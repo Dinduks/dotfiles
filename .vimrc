@@ -78,9 +78,8 @@ set directory=~/.tmp,/var/tmp,/tmp
 silent! source .lvimrc
 
 " Remove trailing whitespaces, replace tabs and non-breaking spaces with spaces
-" TODO: Replace a single tab with a number of spaces equal to the current tabstop value
 function! FutureShock()
-  silent! %s/\t/  /g
-  silent! %s/\%u00a0/ /g
-  silent! %s/\s\+$//g
+  silent! %retab
+  silent! %s/\%u00a0/ /
+  silent! %s/\s\+$//
 endfunction
