@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/php-getter-setter.vim"]
+	path = .vim/bundle/php-getter-setter.vim
+	url = git://github.com/docteurklein/php-getter-setter.vim.git
