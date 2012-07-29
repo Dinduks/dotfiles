@@ -29,6 +29,7 @@ au FocusLost *:wa " Automatically save files on focus lost
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
+set undofile
 
 " Tabs & co
 filetype plugin indent on
@@ -72,6 +73,7 @@ inoremap <RIGHT> <NOP>
 " Save swap files in a temp directory
 set backupdir=~/.tmp,/var/tmp,/tmp
 set directory=~/.tmp,/var/tmp,/tmp
+set undodir=~/.tmp,/var/tmp,/tmp
 
 " Automatically loads any .lvimrc (local vimrc) file
 " Doesn't throw an error if the file doesn't exist
