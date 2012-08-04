@@ -23,6 +23,8 @@ syntax enable
 " Events
 au BufNewFile,BufRead *.html.twig set filetype=htmldjango
 au BufNewFile,BufRead *.rst.inc   set filetype=rst
+au BufNewFile,BufRead *.ru        set filetype=ruby
+au BufNewFile,BufRead Gemfile     set filetype=ruby
 au FocusLost *:wa " Automatically save files on focus lost
 
 " Files related stuff
