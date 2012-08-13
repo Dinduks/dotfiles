@@ -20,13 +20,6 @@ colorscheme solarized
 let g:solarized_termcolors=256
 syntax enable
 
-" Events
-au BufNewFile,BufRead *.html.twig set filetype=htmldjango
-au BufNewFile,BufRead *.rst.inc   set filetype=rst
-au BufNewFile,BufRead *.ru        set filetype=ruby
-au BufNewFile,BufRead Gemfile     set filetype=ruby
-au FocusLost *:wa " Automatically save files on focus lost
-
 " Files related stuff
 set ff=unix
 set encoding=utf-8
@@ -40,6 +33,13 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set shiftround
+
+" Events
+au BufNewFile,BufRead *.html.twig set  filetype=htmldjango
+au BufNewFile,BufRead *.rst.inc   set  filetype=rst
+au BufNewFile,BufRead *.ru        set  filetype=ruby
+au BufNewFile,BufRead Gemfile     set  filetype=ruby
+au BufNewFile,BufRead *.js        setl shiftwidth=4 tabstop=4
 
 " Search stuff
 set ignorecase
