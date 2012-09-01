@@ -13,9 +13,11 @@ alias sbal="./symfony doctrine:build --all --and-load --no-confirmation && s cc"
 alias sshad="ssh dinduks@ssh.alwaysdata.com"
 
 export EDITOR=/usr/bin/vim
-TERM=xterm-color; export TERM
+export TERM=screen-256color
 
 mkcd () { mkdir -p "$*"; cd "$*"; }
+apti () { aptitude install "$*"; }
+apts () { aptitude search  "$*"; }
 
 if [ $(whoami) != 'root' ]; then
   GIT_PS1_SHOWDIRTYSTATE=true
