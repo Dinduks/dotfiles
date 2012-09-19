@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/php-getter-setter.vim"]
 	path = .vim/bundle/php-getter-setter.vim
 	url = git://github.com/docteurklein/php-getter-setter.vim.git
+[submodule ".vim/bundle/vim-scala"]
+	path = .vim/bundle/vim-scala
+	url = git://github.com/derekwyatt/vim-scala.git
