@@ -52,13 +52,12 @@ set hlsearch
 nnoremap <LEADER><SPACE> :noh<CR>
 
 " Keybindings
-map <F3> :!clear && ruby %<CR> " execute the current ruby file
-map <F4> :call FutureShock()<CR>
+map <LEADER>f :call FutureShock()<CR>
 map <F5> :tabnew<CR>
 map <F6> :tabclose<CR>
 map <F7> gT
 map <F8> gt
-map <F9> :NERDTreeToggle<CR>
+map <LEADER>n :NERDTreeToggle<CR>
 map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
 map <S-E> <Plug>CamelCaseMotion_e
