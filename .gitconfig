@@ -2,7 +2,7 @@
   name         = Samy Dindane
   email        = samy@dindane.com
 [alias]
-  st           = status
+  st           = status -s
   ci           = commit
   co           = checkout
   s            = submodule
