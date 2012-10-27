@@ -16,6 +16,7 @@ set list
 set listchars=trail:◃,nbsp:•
 set t_Co=256
 set background=dark
+set transparency=8
 colorscheme solarized
 let g:solarized_termcolors=256
 syntax enable
