@@ -1,3 +1,5 @@
+source ~/.rvm/scripts/rvm
+
 alias grep="grep --color=auto"
 alias less="less -r"
 alias l="ls -alhG"
@@ -8,4 +10,6 @@ alias rspec="rspec --color"
 alias sshad="ssh dinduks@ssh.alwaysdata.com"
 
 mkcd () { mkdir -p "$*"; cd "$*"; }
+
+export ZSH_THEME=agnoster
 
