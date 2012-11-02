@@ -23,3 +23,5 @@
   excludesfile = ~/.gitignore_global
 [push]
   default      = tracking
+[help]
+  autocorrect  = 1
