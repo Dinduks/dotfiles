@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/vim-java-get-set"]
 	path = .vim/bundle/vim-java-get-set
 	url = git@github.com:Dinduks/vim-java-get-set.git
+[submodule ".vim/bundle/play2vim"]
+	path = .vim/bundle/play2vim
+	url = git://github.com/gre/play2vim.git
