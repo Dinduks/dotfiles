@@ -40,5 +40,13 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-coverage/
+# IDE #
+#######
+.classpath
+.project
+.settings
 .idea/
+
+# Custom stuff #
+################
+coverage/
