@@ -1,5 +1,6 @@
 source ~/.rvm/scripts/rvm
 
+alias gcc="gcc -Wall -ansi"
 alias grep="grep --color=auto"
 alias grepi="grep -i --color=auto"
 alias less="less -r"
