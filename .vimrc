@@ -52,6 +52,7 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <LEADER><SPACE> :noh<CR>
+let g:ctrlp_custom_ignore = { 'dir': '\v[\/](\.git|target)$' }
 
 " Keybindings
 map <LEADER>f :call FutureShock()<CR>
@@ -90,3 +91,4 @@ function! FutureShock()
   silent! %s/\%u00a0/ /
   silent! %s/\s\+$//
 endfunction
+
