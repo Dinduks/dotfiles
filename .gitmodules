@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/play2vim"]
 	path = .vim/bundle/play2vim
 	url = git://github.com/gre/play2vim.git
+[submodule ".vim/bundle/ack.vim"]
+	path = .vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
