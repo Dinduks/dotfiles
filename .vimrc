@@ -16,7 +16,7 @@ set list
 set listchars=trail:◃,nbsp:•
 set t_Co=256
 set background=dark
-silent! set transparency=5 " Shut the full cup
+silent! set transparency=1 " Shut the full cup
 colorscheme solarized
 let g:solarized_termcolors=256
 syntax enable
