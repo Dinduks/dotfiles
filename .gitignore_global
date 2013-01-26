@@ -47,6 +47,8 @@ Thumbs.db
 .project
 .settings
 .idea/
+*.iml
+out/
 
 # Custom stuff #
 ################
