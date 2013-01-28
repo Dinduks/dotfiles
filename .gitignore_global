@@ -9,6 +9,8 @@
 *.o
 *.so
 *.out
+*.apk
+*.ap_
 
 # Packages #
 ############
@@ -53,3 +55,4 @@ out/
 # Custom stuff #
 ################
 coverage/
+*.properties
