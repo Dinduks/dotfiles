@@ -21,6 +21,7 @@
 [core]
   editor       = vim
   excludesfile = ~/.gitignore_global
+  quotepath    = false
 [push]
   default      = tracking
 [help]
