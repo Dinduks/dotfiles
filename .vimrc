@@ -37,6 +37,7 @@ set shiftround
 
 " Events
 au BufNewFile,BufRead *.html.twig set  filetype=htmldjango
+au BufNewFile,BufRead *.md        setl filetype=markdown
 au BufNewFile,BufRead *.rst.inc   set  filetype=rst
 au BufNewFile,BufRead *.ru        set  filetype=ruby
 au BufNewFile,BufRead Gemfile     set  filetype=ruby
