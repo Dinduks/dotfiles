@@ -55,9 +55,6 @@
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
 	url = git://github.com/derekwyatt/vim-scala.git
-[submodule ".vim/bundle/vim-java-get-set"]
-	path = .vim/bundle/vim-java-get-set
-	url = git@github.com:Dinduks/vim-java-get-set.git
 [submodule ".vim/bundle/c.vim"]
 	path = .vim/bundle/c.vim
 	url = git://github.com/vim-scripts/c.vim.git
