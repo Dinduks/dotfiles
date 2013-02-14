@@ -1,5 +1,5 @@
 zlink () {
-  example_of_use="Example of use: \`zlink target.zip source/ Music\`"
+  example_of_use="Example of use: \`zlink source/ target Music\`"
 
   if [ "$1" = "--help" -o "$1" = "-h" ]; then
     echo $example_of_use
