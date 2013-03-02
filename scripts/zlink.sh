@@ -14,7 +14,7 @@ zlink () {
 
     echo "Zipping \`$source\` in \`$zipname\`..."
     zip -r "$HOME/documents/$dest/$zipname" "$source"
-    echo "Done. Link to the zip archive: $link."
+    echo "Done. The link to the zip archive:\n$link"
   else
     echo "Incorrect number of arguments."
     echo $example_of_use
