@@ -4,7 +4,6 @@ let mapleader=","
 
 " Mainly visual stuff
 set number
-set relativenumber
 set cursorline
 set colorcolumn=85
 set mouse=a
