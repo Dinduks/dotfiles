@@ -9,6 +9,7 @@ alias rgrepi="grep -ri --color=auto"
 alias rs="bundle exec rails server"
 alias rspec="rspec --color"
 alias sshad="ssh dinduks@ssh.alwaysdata.com"
+alias treea="tree -a"
 
 mkcd () { mkdir -p "$*"; cd "$*"; }
 
