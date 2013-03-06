@@ -14,7 +14,10 @@ zlink () {
 
     echo "Zipping \`$source\` in \`$zipname\`..."
     zip -r "$HOME/documents/$dest/$zipname" "$source"
-    echo "Done. The link to the zip archive:\n$link"
+    echo "Done."
+    echo "The link to the zip archive:\n$link"
+    echo "The awesome super command:"
+    echo "cd /tmp && curl -O -u dinduks $link && unzip $zipname"
   else
     echo "Incorrect number of arguments."
     echo $example_of_use
