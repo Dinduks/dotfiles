@@ -1,3 +1,4 @@
+alias cp="cp -r"
 alias gcc="gcc -Wall -ansi"
 alias grep="grep --color=auto"
 alias grepi="grep -i --color=auto"
