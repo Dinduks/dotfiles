@@ -16,5 +16,4 @@ alias treea="tree -a"
 mkcd () { mkdir -p "$*"; cd "$*"; }
 kag () { echo $*; kill -9 `pgrep -i $*` }
 
-export ZSH_THEME=agnoster
-
+export ZSH_THEME=robbyrussell
