@@ -64,6 +64,9 @@
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule ".vim/bundle/molokai.vim"]
 	path = .vim/bundle/molokai.vim
 	url = https://github.com/mrtazz/molokai.vim.git
