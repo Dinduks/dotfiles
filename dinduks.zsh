@@ -12,9 +12,9 @@ alias rspec="rspec --color"
 alias sshad="ssh dinduks@ssh.alwaysdata.com"
 alias treea="tree -a"
 
-kag () { echo $*; kill -9 `pgrep -i $*` }
+kag () { echo $*; kill -9 `pgrep -i $*`; }
 mkcd () { mkdir -p "$*"; cd "$*"; }
-myip () { ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}' }
-scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /" }
+myip () { ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}'; }
+scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
 
 export ZSH_THEME=robbyrussell
