@@ -3,6 +3,8 @@ call pathogen#infect()
 let mapleader=","
 
 " Mainly visual stuff
+set splitbelow
+set splitright
 set number
 set cursorline
 set colorcolumn=85
@@ -26,7 +28,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set undofile
 
-" Tabs & co
+" Tabulations & co
 filetype plugin indent on
 set autoindent
 set expandtab
@@ -65,6 +67,10 @@ map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
 map <S-E> <Plug>CamelCaseMotion_e
 inoremap jj <ESC>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Forget about the arrow keys!
 nnoremap <UP>    <NOP>
