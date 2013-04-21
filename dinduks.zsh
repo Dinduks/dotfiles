@@ -9,7 +9,6 @@ alias pgrepi="pgrep -i"
 alias rgrep="grep -r --color=auto"
 alias rgrepi="grep -ri --color=auto"
 alias rspec="rspec --color"
-alias sshad="ssh dinduks@ssh.alwaysdata.com"
 alias treea="tree -a"
 
 kag () { echo $*; kill -9 `pgrep -i $*`; }
