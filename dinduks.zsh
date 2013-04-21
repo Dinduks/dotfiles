@@ -11,7 +11,7 @@ alias rgrepi="grep -ri --color=auto"
 alias rspec="rspec --color"
 alias treea="tree -a"
 
-kag () { echo $*; kill -9 `pgrep -i $*`; }
+kmp () { kill -9 `pgrep -i $*`; }
 mkcd () { mkdir -p "$*"; cd "$*"; }
 myip () { ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}'; }
 scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
