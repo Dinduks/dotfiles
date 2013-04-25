@@ -83,9 +83,9 @@ inoremap <LEFT>  <NOP>
 inoremap <RIGHT> <NOP>
 
 " Save swap files in a temp directory
-set backupdir=~/.tmp,/var/tmp,/tmp
-set directory=~/.tmp,/var/tmp,/tmp
-set undodir=~/.tmp,/var/tmp,/tmp
+set backupdir=~/.tmp,/tmp,/var/tmp
+set directory=~/.tmp,/tmp,/var/tmp
+set undodir=~/.tmp,/tmp,/var/tmp
 
 " Automatically loads any .lvimrc (local vimrc) file
 " Doesn't throw an error if the file doesn't exist
