@@ -2,6 +2,7 @@
   name         = Samy Dindane
   email        = samy@dindane.com
 [alias]
+  bi           = bisect
   st           = status -s
   ci           = commit
   co           = checkout
