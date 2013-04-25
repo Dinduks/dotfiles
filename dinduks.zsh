@@ -14,7 +14,7 @@ alias vlc="open -a VLC"
 
 kmp () { kill -9 `pgrep -i $*`; }
 mkcd () { mkdir -p "$*"; cd "$*"; }
-myip () { ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}'; }
+myip () { /sbin/ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}' | sed "s/addr://"; }
 scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
 
 export ZSH_THEME=robbyrussell
