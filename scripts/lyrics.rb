@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+#encoding: UTF-8
 
 require 'nokogiri'
 require 'open-uri'
@@ -20,16 +21,20 @@ if not ARGV.empty?
   elsif ARGV.length == 2
     song_name = ARGV[1]
 
-    html = open(band_link)
-    doc = Nokogiri::HTML(html)
-    song_elem = doc.xpath("//a").find do |link|
-      link.children.first.text =~ /#{song_name}/i
-    end
-    song_rel_url = song_elem.attributes.first[1].value
-    song_clean_rel_url = song_rel_url[-song_rel_url.length+3, song_rel_url.length-3]
-    song_link = "http://darklyrics.com/#{song_clean_rel_url}"
+    begin
+      html = open(band_link)
+      doc = Nokogiri::HTML(html)
+      song_elem = doc.xpath("//a").find do |link|
+        link.children.first.text =~ /#{song_name}/i
+      end
+      song_rel_url = song_elem.attributes.first[1].value
+      song_clean_rel_url = song_rel_url[-song_rel_url.length+3, song_rel_url.length-3]
+      song_link = "http://darklyrics.com/#{song_clean_rel_url}"
 
-    system("open", song_link)
+      system("open", song_link)
+    rescue OpenURI::HTTPError
+      puts "Band not found"
+    end
   end
 else
   puts help
