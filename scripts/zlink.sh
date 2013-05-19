@@ -17,7 +17,7 @@ zlink () {
     echo "Done."
     echo "The link to the zip archive:\n$link"
     echo "The awesome super command:"
-    echo "cd /tmp && curl -O -u dinduks $link && unzip $zipname"
+    echo "cd ~/Downloads && curl -O -u dinduks $link && unzip $zipname"
   else
     echo "Incorrect number of arguments."
     echo $example_of_use
