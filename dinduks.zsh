@@ -10,6 +10,7 @@ alias rgrep="grep -r --color=auto"
 alias rgrepi="grep -ri --color=auto"
 alias rspec="rspec --color"
 alias treea="tree -a"
+alias vlc="open -a VLC"
 
 kmp () { kill -9 `pgrep -i $*`; }
 mkcd () { mkdir -p "$*"; cd "$*"; }
