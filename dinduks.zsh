@@ -11,6 +11,7 @@ alias rgrepi="grep -ri --color=auto"
 alias rspec="rspec --color"
 alias treea="tree -a"
 alias vlc="open -a VLC"
+alias turnoff="sudo shutdown -h now"
 
 kmp () { kill -9 `pgrep -i $*`; }
 mkcd () { mkdir -p "$*"; cd "$*"; }
