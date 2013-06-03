@@ -11,14 +11,16 @@
   rb           = rebase
   diffs        = diff --staged
   remotev      = remote -v
-  lg           = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
-  lga          = log --all --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+  lg           = log --graph --pretty=log --abbrev-commit --date=relative
+  lga          = log --graph --pretty=log --abbrev-commit --date=relative --all
 [color]
   ui           = auto
   branch       = auto
   diff         = auto
   status       = auto
   interactive  = auto
+[pretty]
+  log          = tformat:%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an %cr)%Creset
 [core]
   editor       = vim
   excludesfile = ~/.gitignore_global
