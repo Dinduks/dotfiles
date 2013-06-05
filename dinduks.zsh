@@ -1,3 +1,6 @@
+# Enable bash-style comments (with '#') in the CLI
+setopt interactivecomments
+
 alias cp="cp -r"
 alias gcc="gcc -Wall -ansi"
 alias grep="grep --color=auto"
