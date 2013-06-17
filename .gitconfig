@@ -20,7 +20,7 @@
   status       = auto
   interactive  = auto
 [pretty]
-  log          = tformat:%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an %cr)%Creset
+  log          = tformat:%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an — %cr)%Creset
 [core]
   editor       = vim
   excludesfile = ~/.gitignore_global
