@@ -22,4 +22,5 @@ myip () { /sbin/ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 
 scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
 use-java() { export JAVA_HOME=`/usr/libexec/java_home -v 1.$1` }
 
+export JAVA_OPTS="-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m -Dfile.encoding=UTF-8"
 export ZSH_THEME=robbyrussell
