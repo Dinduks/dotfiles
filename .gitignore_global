@@ -55,4 +55,3 @@ out/
 # Custom stuff #
 ################
 coverage/
-*.properties
