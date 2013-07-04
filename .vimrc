@@ -22,6 +22,7 @@ silent! set transparency=1 " Shut the full cup
 colorscheme solarized
 let g:solarized_termcolors=256
 syntax enable
+set guifont=Monaco\ for\ Powerline:h12
 
 " Files related stuff
 set ff=unix
