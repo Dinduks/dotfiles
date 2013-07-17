@@ -82,3 +82,6 @@
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule ".vim/bundle/vim-holylight"]
+	path = .vim/bundle/vim-holylight
+	url = https://github.com/Dinduks/vim-holylight.git
