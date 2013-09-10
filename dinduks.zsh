@@ -16,7 +16,9 @@ alias treea="tree -a"
 alias vlc="open -a VLC"
 alias turnoff="sudo shutdown -h now"
 
+firstl () { head -n 1 }
 kmp () { kill -9 `pgrep -i $*`; }
+lastl () { tail -n 1 }
 mkcd () { mkdir -p "$*"; cd "$*"; }
 myip () { /sbin/ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}' | sed "s/addr://"; }
 scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
