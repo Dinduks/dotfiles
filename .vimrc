@@ -93,8 +93,9 @@ set undodir=~/.tmp,/tmp,/var/tmp
 " Doesn't throw an error if the file doesn't exist
 silent! source .lvimrc
 
-" Disable Syntastic for Java files
-let g:syntastic_java_javac_executable = ""
+let g:syntastic_java_javac_executable = "" " Disable Syntastic for Java files
+let g:syntastic_js_checkers=['jslint', 'jshint']
+let g:syntastic_ruby_checkers=['mri']
 
 " Remove trailing whitespaces, replace tabs and non-breaking spaces with spaces
 function! FutureShock()
