@@ -7,7 +7,7 @@ set splitbelow
 set splitright
 set number
 set cursorline
-set colorcolumn=85
+set colorcolumn=80
 set mouse=a
 set wildmenu
 set wildmode=list:longest
