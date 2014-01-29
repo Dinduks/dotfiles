@@ -7,7 +7,7 @@ set splitbelow
 set splitright
 set number
 set cursorline
-set colorcolumn=80
+silent! set colorcolumn=80
 set mouse=a
 set wildmenu
 set wildmode=list:longest
@@ -28,7 +28,7 @@ set guifont=Monaco\ for\ Powerline:h12
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
-set undofile
+silent! set undofile
 
 " Tabulations & co
 filetype plugin indent on
@@ -87,7 +87,7 @@ inoremap <RIGHT> <NOP>
 " Save swap files in a temp directory
 set backupdir=~/.tmp,/tmp,/var/tmp
 set directory=~/.tmp,/tmp,/var/tmp
-set undodir=~/.tmp,/tmp,/var/tmp
+silent! set undodir=~/.tmp,/tmp,/var/tmp
 
 " Automatically loads any .lvimrc (local vimrc) file
 " Doesn't throw an error if the file doesn't exist
