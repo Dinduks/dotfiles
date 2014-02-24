@@ -24,6 +24,7 @@ myip       () { /sbin/ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{prin
 neo4jkill  () { kill `ps aux | grep -i neo | grep -v grep | awk '{printf $2;}'` }
 neo4jstart () { (cd ~/Applications/neo4j-community-1.9.4/ && bin/neo4j start) }
 scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
+trash      () { command mv "$@" ~/.Trash }
 use-java   () { export JAVA_HOME=`/usr/libexec/java_home -v 1.$1` }
 
 export JAVA_OPTS="-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m -Dfile.encoding=UTF-8"
