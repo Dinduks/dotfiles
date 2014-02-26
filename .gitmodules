@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/vim-ragtag"]
 	path = .vim/bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
-[submodule ".vim/bundle/php.vim"]
-	path = .vim/bundle/php.vim
-	url = https://github.com/vim-scripts/php.vim--Garvin.git
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -42,22 +39,19 @@
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = git@github.com:tpope/vim-fugitive
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule ".vim/bundle/php-getter-setter.vim"]
-	path = .vim/bundle/php-getter-setter.vim
-	url = git://github.com/docteurklein/php-getter-setter.vim.git
+	url = git@github.com:godlygeek/tabular
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
-	url = git://github.com/derekwyatt/vim-scala.git
+	url = git@github.com:derekwyatt/vim-scala
 [submodule ".vim/bundle/c.vim"]
 	path = .vim/bundle/c.vim
-	url = git://github.com/vim-scripts/c.vim.git
+	url = git@github.com:vim-scripts/c.vim
 [submodule ".vim/bundle/play2vim"]
 	path = .vim/bundle/play2vim
-	url = git://github.com/gre/play2vim.git
+	url = git@github.com:gre/play2vim
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
@@ -69,13 +63,13 @@
 	url = https://github.com/mrtazz/molokai.vim.git
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
+  url = git@github.com:airblade/vim-gitgutter
 [submodule ".vim/bundle/vimclojure"]
 	path = .vim/bundle/vimclojure
-	url = git://github.com/vim-scripts/VimClojure.git
+	url = git@github.com:vim-scripts/VimClojure
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
