@@ -16,6 +16,7 @@ alias rspec="rspec --color"
 alias treea="tree -a"
 alias turnoff="sudo shutdown -h now"
 
+loop       () { while sleep 0.2; do $*; done; }
 firstl     () { head -n 1 }
 kmp        () { kill -9 `pgrep -i $*`; }
 lastl      () { tail -n 1 }
