@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$1" = "empty" ]; then
+  sudo networksetup -setdnsservers Wi-Fi    empty
+  sudo networksetup -setdnsservers Ethernet empty
+elif [ "$1" = "opendns" ]; then
+  sudo networksetup -setdnsservers Wi-Fi    208.67.222.222 208.67.220.220
+  sudo networksetup -setdnsservers Ethernet 208.67.222.222 208.67.220.220
+else
+  echo "Arguments: \`empty\` or \`opendns\`."
+fi
