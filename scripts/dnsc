@@ -6,6 +6,9 @@ if [ "$1" = "empty" ]; then
 elif [ "$1" = "opendns" ]; then
   sudo networksetup -setdnsservers Wi-Fi    208.67.222.222 208.67.220.220
   sudo networksetup -setdnsservers Ethernet 208.67.222.222 208.67.220.220
+elif [ "$1" = "onic" ]; then
+  sudo networksetup -setdnsservers Wi-Fi    87.98.175.85   188.165.25.65
+  sudo networksetup -setdnsservers Ethernet 87.98.175.85   188.165.25.65
 else
   echo "Arguments: \`empty\` or \`opendns\`."
 fi
