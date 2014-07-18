@@ -1,5 +1,5 @@
-# Enable bash-style comments (with '#') in the CLI
-setopt interactivecomments
+setopt interactivecomments # Enable bash-style comments (with '#') in the CLI
+set    HIST_IGNORE_SPACE
 
 alias cp="cp -r"
 alias gcc="gcc -Wall -ansi"
