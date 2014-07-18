@@ -1,0 +1,15 @@
+#!/usr/bin/ruby
+
+require 'json'
+require 'open-uri'
+
+geoip   = JSON.parse(open('http://www.telize.com/geoip').read)
+
+ip      = geoip["ip"]
+city    = geoip["city"]
+country = geoip["country"]
+isp     = geoip["isp"]
+
+puts "IP:       #{ip}"
+puts "ISP:      #{isp}"
+puts "Location: #{city + ", " if city}#{country}"
