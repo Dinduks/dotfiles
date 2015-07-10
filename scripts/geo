@@ -10,6 +10,8 @@ city    = geoip["city"]
 country = geoip["country"]
 isp     = geoip["isp"]
 
+puts "Date:     #{Time.new}"
 puts "IP:       #{ip}"
 puts "ISP:      #{isp}"
 puts "Location: #{city + ", " if city}#{country}"
+puts ""
