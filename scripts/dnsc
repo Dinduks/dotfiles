@@ -9,6 +9,7 @@ elif [ "$1" = "opendns" ]; then
 elif [ "$1" = "onic" ]; then
   sudo networksetup -setdnsservers Wi-Fi    87.98.175.85   188.165.25.65
   sudo networksetup -setdnsservers Ethernet 87.98.175.85   188.165.25.65
+  sudo networksetup -setdnsservers "Thunderbolt Ethernet" 87.98.175.85   188.165.25.65
 else
   echo "Arguments: \`empty\` or \`opendns\`."
 fi
