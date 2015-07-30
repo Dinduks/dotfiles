@@ -155,5 +155,14 @@ bar {
         status_command i3status
 }
 
+assign [class="^telegram$"] → 1
+assign [class="^Icedove$"] → 2
+assign [class="^Chromium$"] → 5
+assign [class="^jetbrains-idea$"] → 6
+
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
+exec --no-startup-id telegram
+exec --no-startup-id pidgin
+exec --no-startup-id icedove
+exec --no-startup-id i3-msg 'workspace 3; exec iceweasel; workspace 1'
