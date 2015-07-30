@@ -8,8 +8,8 @@ sudo systemctl enable i3lock.service
 ln -s $PWD/.vim ~
 ln -s $PWD/.vimrc ~
 
-ln -s $PWD/.gitconfig ~
-ln -s $PWD/.gitignore_global ~
+ln -s $PWD/git/.gitconfig ~
+ln -s $PWD/git/.gitignore_global ~
 
 mkdir -p ~/.i3
 ln -s $PWD/i3/config ~/.i3
