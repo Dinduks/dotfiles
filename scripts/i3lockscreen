@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# From: http://plankenau.com/blog/post/gaussian-blur-lock-screen-i3lock/
+
+screenshot=/tmp/screenshot.png
+blurred_ss=/tmp/blurred_sc.png
+
+scrot $screenshot
+convert $screenshot -blur 0x5 $screenshot
+i3lock -i $screenshot
