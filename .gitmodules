@@ -1,50 +1,50 @@
 [submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
+	path = vim/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/scss-syntax"]
-	path = .vim/bundle/scss-syntax
+	path = vim/.vim/bundle/scss-syntax
 	url = https://github.com/cakebaker/scss-syntax.vim.git
 [submodule ".vim/bundle/vim-monokai"]
-	path = .vim/bundle/vim-monokai
+	path = vim/.vim/bundle/vim-monokai
 	url = https://github.com/sickill/vim-monokai.git
 [submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
+	path = vim/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-ragtag"]
-	path = .vim/bundle/vim-ragtag
+	path = vim/.vim/bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
 [submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
+	path = vim/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule ".vim/bundle/vim-rails"]
-	path = .vim/bundle/vim-rails
+	path = vim/.vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
 [submodule ".vim/bundle/snipmate.vim"]
-	path = .vim/bundle/snipmate.vim
+	path = vim/.vim/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
 [submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
+	path = vim/.vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule ".vim/bundle/vim-smartinput"]
-	path = .vim/bundle/vim-smartinput
+	path = vim/.vim/bundle/vim-smartinput
 	url = https://github.com/kana/vim-smartinput.git
 [submodule ".vim/bundle/camelcasemotion"]
-	path = .vim/bundle/camelcasemotion
+	path = vim/.vim/bundle/camelcasemotion
 	url = https://github.com/bkad/CamelCaseMotion.git
 [submodule ".vim/bundle/ctrlp.vim"]
-	path = .vim/bundle/ctrlp.vim
+	path = vim/.vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+	path = vim/.vim/bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive
 [submodule ".vim/bundle/tabular"]
-	path = .vim/bundle/tabular
+	path = vim/.vim/bundle/tabular
 	url = git@github.com:godlygeek/tabular
 [submodule ".vim/bundle/vim-scala"]
-	path = .vim/bundle/vim-scala
+	path = vim/.vim/bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala
 [submodule ".vim/bundle/c.vim"]
 	path = .vim/bundle/c.vim
@@ -62,20 +62,20 @@
 	path = .vim/bundle/molokai.vim
 	url = https://github.com/mrtazz/molokai.vim.git
 [submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
+	path = vim/.vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
   url = git@github.com:airblade/vim-gitgutter
 [submodule ".vim/bundle/vimclojure"]
-	path = .vim/bundle/vimclojure
+	path = vim/.vim/bundle/vimclojure
 	url = git@github.com:vim-scripts/VimClojure
 [submodule ".vim/bundle/vim-less"]
-	path = .vim/bundle/vim-less
+	path = vim/.vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
 [submodule ".vim/bundle/vim-holylight"]
-	path = .vim/bundle/vim-holylight
+	path = vim/.vim/bundle/vim-holylight
 	url = https://github.com/Dinduks/vim-holylight.git
 [submodule ".vim/bundle/emmet-vim"]
-	path = .vim/bundle/emmet-vim
+	path = vim/.vim/bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git

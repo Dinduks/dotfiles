@@ -5,8 +5,8 @@ sudo ln -s $PWD/scripts/i3lockscreen /usr/local/bin
 sudo ln -s $PWD/systemd/i3lock.service /etc/systemd/system
 sudo systemctl enable i3lock.service
 
-ln -s $PWD/.vim ~
-ln -s $PWD/.vimrc ~
+ln -s $PWD/vim/.vim ~
+ln -s $PWD/vim/.vimrc ~
 
 ln -s $PWD/git/.gitconfig ~
 ln -s $PWD/git/.gitignore_global ~
