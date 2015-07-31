@@ -79,3 +79,6 @@
 [submodule ".vim/bundle/emmet-vim"]
 	path = vim/.vim/bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "vim/.vim/bundle/vim-systemd"]
+	path = vim/.vim/bundle/vim-systemd
+	url = git@github.com:Matt-Deacalion/vim-systemd-syntax.git
