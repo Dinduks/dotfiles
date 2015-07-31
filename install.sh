@@ -1,4 +1,4 @@
-sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop
+sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop curl wget
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
