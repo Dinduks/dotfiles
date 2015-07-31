@@ -166,3 +166,4 @@ exec --no-startup-id telegram
 exec --no-startup-id pidgin
 exec --no-startup-id icedove
 exec --no-startup-id i3-msg 'workspace 3; exec iceweasel; workspace 1'
+exec --no-startup-id /usr/local/bin/autolockscreen
