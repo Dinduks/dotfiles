@@ -9,4 +9,4 @@ Environment=DISPLAY=:0
 ExecStart=/usr/local/bin/i3lockscreen
 
 [Install]
-WantedBy=suspend.target
+WantedBy=sleep.target
