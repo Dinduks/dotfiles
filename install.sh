@@ -1,6 +1,12 @@
+sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop
+
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-sudo ln -s $PWD/scripts/i3lockscreen /usr/local/bin
+SCRIPTS=scripts/*
+for script in $SCRIPTS; do
+  echo sudo ln -s $PWD/$script /usr/local/bin
+done
+
 sudo ln -s /usr/local/bin/{i3lockscreen,lock}
 
 sudo cp $PWD/systemd/i3lock.service /etc/systemd/system
