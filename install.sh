@@ -3,8 +3,9 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 sudo ln -s $PWD/scripts/i3lockscreen /usr/local/bin
 sudo ln -s /usr/local/bin/{i3lockscreen,lock}
 
-sudo ln -s $PWD/systemd/i3lock.service /etc/systemd/system
+sudo cp $PWD/systemd/i3lock.service /etc/systemd/system
 sudo systemctl enable i3lock.service
+sudo systemctl daemon-reload
 
 ln -s $PWD/vim/.vim ~
 ln -s $PWD/vim/.vimrc ~
