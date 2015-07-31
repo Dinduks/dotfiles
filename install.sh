@@ -1,5 +1,7 @@
 sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop curl wget
 
+sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
+
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 SCRIPTS=scripts/*
