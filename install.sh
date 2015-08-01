@@ -20,6 +20,9 @@ sudo mkdir -p /etc/acpi
 sudo mkdir -p /etc/acpi/events
 sudo ln -s $PWD/acpi/fkey-lock    /etc/acpi/events
 sudo ln -s $PWD/acpi/fkey-lock.sh /etc/acpi
+sudo ln -s $PWD/acpi/volkey-mute  /etc/acpi/events
+sudo ln -s $PWD/acpi/volkey-up    /etc/acpi/events
+sudo ln -s $PWD/acpi/volkey-down  /etc/acpi/events
 
 ln -s $PWD/vim/.vim ~
 ln -s $PWD/vim/.vimrc ~
