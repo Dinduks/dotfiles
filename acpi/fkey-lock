@@ -1,2 +1,2 @@
 event=button/screenlock
-action=/etc/acpi/fkey-lock.sh
+action=DISPLAY=:0.0 su dinduks -c i3lockscreen
