@@ -1,0 +1,2 @@
+event=button/screenlock
+action=/etc/acpi/fkey-lock.sh

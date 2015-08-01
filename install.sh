@@ -1,4 +1,5 @@
-sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop curl wget
+sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop \
+                         curl wget acpid
 
 sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
 
@@ -14,6 +15,11 @@ sudo ln -s /usr/local/bin/{i3lockscreen,lock}
 sudo cp $PWD/systemd/i3lock.service /etc/systemd/system
 sudo systemctl enable i3lock.service
 sudo systemctl daemon-reload
+
+sudo mkdir -p /etc/acpi
+sudo mkdir -p /etc/acpi/events
+sudo ln -s $PWD/acpi/fkey-lock    /etc/acpi/events
+sudo ln -s $PWD/acpi/fkey-lock.sh /etc/acpi
 
 ln -s $PWD/vim/.vim ~
 ln -s $PWD/vim/.vimrc ~
