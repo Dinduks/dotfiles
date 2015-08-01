@@ -5,9 +5,8 @@ sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/c
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-SCRIPTS=scripts/*
-for script in $SCRIPTS; do
-  echo sudo ln -s $PWD/$script /usr/local/bin
+for script in scripts/*; do
+  sudo ln -s $PWD/$script /usr/local/bin
 done
 
 sudo ln -s /usr/local/bin/{i3lockscreen,lock}
