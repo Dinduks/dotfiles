@@ -182,7 +182,7 @@ exec --no-startup-id i3-msg 'workspace $workspace4; exec terminator; workspace $
 exec --no-startup-id /usr/local/bin/autolockscreen
 
 bindcode 107 exec scrot '%Y-%m-%d_%H:%M.png' -e 'mv $f ~/Pictures/Screenshots/'
-bindcode 121 exec amixer set Master toggle
-bindcode 122 exec amixer set Master 5%- unmute
-bindcode 123 exec amixer set Master 5%+ unmute
+bindcode 121 exec "amixer set Master toggle; killall -USR1 i3status"
+bindcode 122 exec "amixer set Master 5%- unmute; killall -USR1 i3status"
+bindcode 123 exec "amixer set Master 5%+ unmute; killall -USR1 i3status"
 bindcode 160 exec i3lockscreen
