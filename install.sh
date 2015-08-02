@@ -32,3 +32,5 @@ ln -s $PWD/i3/config ~/.i3
 ln -s $PWD/i3/.i3status.conf ~
 
 ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom
+
+mkdir -p ~/Pictures/Screenshots
