@@ -173,7 +173,6 @@ assign [class="^Chromium$"] → $workspace5
 assign [class="^jetbrains-idea$"] → $workspace6
 
 exec --no-startup-id nm-applet
-exec --no-startup-id pasystray
 exec --no-startup-id telegram
 exec --no-startup-id pidgin
 exec --no-startup-id icedove
