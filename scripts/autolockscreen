@@ -4,7 +4,7 @@ delay=1
 notify_margin=10
 locker="/usr/local/bin/i3lockscreen"
 notifier_message="The screen will be locked in 10 seconds"
-notifier="notify-send -t 10000 '$notifier_message'"
+notifier="notify-send -t 8000 '$notifier_message'"
 
 xautolock \
     -detectsleep \
