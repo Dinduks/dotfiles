@@ -1,5 +1,5 @@
 sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop \
-                         curl wget acpid pulseaudio unclutter terminator
+                         curl wget acpid pulseaudio unclutter terminator awk
 
 sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
 
@@ -30,6 +30,7 @@ ln -s $PWD/git/.gitignore_global ~
 mkdir -p ~/.i3
 ln -s $PWD/i3/config ~/.i3
 ln -s $PWD/i3/.i3status.conf ~
+sudo ln -s $PWD/i3/.i3status-wrapper /usr/local/bin
 
 ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom
 
