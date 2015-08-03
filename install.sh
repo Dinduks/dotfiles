@@ -39,4 +39,6 @@ ln -s $PWD/config/terminator/config ~/.config/terminator
 
 mkdir -p ~/Pictures/Screenshots
 
+ln -s $PWD/weechat ~/.weechat
+
 sudo usermod -a -G pulse dinduks
