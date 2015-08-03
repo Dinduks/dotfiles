@@ -6,6 +6,7 @@
   [[default]]
     background_image = None
     background_color = "#fdf6e3"
+    scrollback_infinite = True
     foreground_color = "#657b83"
 [layouts]
   [[default]]
