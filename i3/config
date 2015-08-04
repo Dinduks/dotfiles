@@ -174,10 +174,10 @@ assign [class="^jetbrains-idea$"] → $workspace6
 
 exec --no-startup-id nm-applet
 exec --no-startup-id telegram
-exec --no-startup-id pidgin
 exec --no-startup-id icedove
 exec --no-startup-id i3-msg 'workspace $workspace3; exec iceweasel; workspace $workspace1'
 exec --no-startup-id i3-msg 'workspace $workspace4; exec terminator -l main; workspace $workspace1'
+exec --no-startup-id i3-msg 'exec urxvt -e weechat'
 exec --no-startup-id /usr/local/bin/autolockscreen
 exec --no-startup-id unclutter
 
