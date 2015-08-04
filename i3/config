@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+A kill
@@ -176,8 +176,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id telegram
 exec --no-startup-id icedove
 exec --no-startup-id i3-msg 'workspace $workspace3; exec iceweasel; workspace $workspace1'
-exec --no-startup-id i3-msg 'workspace $workspace4; exec terminator -l main; workspace $workspace1'
 exec --no-startup-id i3-msg 'exec urxvt -e weechat'
+exec --no-startup-id i3-msg 'workspace $workspace4; exec urxvt; workspace $workspace1'
+exec --no-startup-id i3-msg 'workspace $workspace4; exec urxvt; workspace $workspace1'
 exec --no-startup-id /usr/local/bin/autolockscreen
 exec --no-startup-id unclutter
 

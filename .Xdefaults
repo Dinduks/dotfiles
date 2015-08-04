@@ -9,7 +9,7 @@ URxvt.scrollBar     : false
 URxvt.shading       : 100
 URxvt.transparent   : true
 URxvt.utf8          : true
-URxvt.urlLauncher   : google-chrome
+URxvt.urlLauncher   : iceweasel
 
-Xft*antialias         true
-Xft*hinting           full
+!Xft*antialias         true
+!Xft*hinting           full
