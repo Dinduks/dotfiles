@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Based on https://github.com/stlifey/x230/blob/master/low-battery-warning
+
+export DISPLAY=:0
+
+STATE=`cat /sys/class/power_supply/AC/online`
+CAPACITY=`cat /sys/class/power_supply/BAT0/capacity`
+
+if [ "$STATE" -eq "1" ] ; then
+  exit 0
+fi
+
+if [ "$CAPACITY" -le "5" ]; then
+  su dinduks -c '/usr/bin/notify-send -u critical "The battery is about to run out. Hibernating in 10 seconds..."'
+  sleep 10
+  /bin/systemctl hibernate
+  exit 0
+fi
+
+if [ "$CAPACITY" -le "6" ]; then
+  su dinduks -c '/usr/bin/notify-send -u critical "The battery is running very low..."'
+  exit 0
+fi
+
+if [ "$CAPACITY" -le "7" ]; then
+  su dinduks -c '/usr/bin/notify-send "The battery is running low."'
+  exit 0
+fi

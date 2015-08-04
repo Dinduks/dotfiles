@@ -5,6 +5,10 @@ sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/c
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+for job in cron.d/*; do
+  sudo cp $PWD/$job /etc/cron.d
+done
+
 for script in scripts/*; do
   sudo ln -s $PWD/$script /usr/local/bin
 done
