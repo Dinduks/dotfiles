@@ -1,6 +1,6 @@
 sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop \
                          curl wget acpid pulseaudio unclutter terminator awk \
-                         rxvt-unicode-256color
+                         rxvt-unicode-256color feh
 
 sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
 
@@ -43,6 +43,8 @@ rm -rf ~/.config/terminator/config
 ln -s $PWD/config/terminator/config ~/.config/terminator
 
 mkdir -p ~/Pictures/Screenshots
+
+ln -s $PWD/i3/wallpaper.jpg ~/Pictures
 
 ln -s $PWD/weechat ~/.weechat
 

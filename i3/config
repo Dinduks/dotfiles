@@ -172,6 +172,8 @@ assign [class="^Icedove$"] → $workspace2
 assign [class="^Chromium$"] → $workspace5
 assign [class="^jetbrains-idea$"] → $workspace6
 
+exec --no-startup-id feh --bg-center ~/Pictures/wallpaper.jpg
+
 exec --no-startup-id nm-applet
 exec --no-startup-id telegram
 exec --no-startup-id icedove
