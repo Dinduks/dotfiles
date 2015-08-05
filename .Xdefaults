@@ -1,15 +1,15 @@
 URxvt.background    : #000000
 URxvt.depth         : 32
 URxvt.externalBorder: 0
-URxvt.font          : xft:Monaco for Powerline:size=8
+URxvt.font          : xft:Bitstream Vera Sans Mono:size=8
 URxvt.foreground    : #FFFFFF
-URxvt.internalBorder: 0
+URxvt.internalBorder: 2
 URxvt.saveLines     : 9000
 URxvt.scrollBar     : false
-URxvt.shading       : 100
+URxvt.shading       : 20
 URxvt.transparent   : true
 URxvt.utf8          : true
 URxvt.urlLauncher   : iceweasel
 
-!Xft*antialias         true
-!Xft*hinting           full
+Xft*antialias         true
+Xft*hinting           full
