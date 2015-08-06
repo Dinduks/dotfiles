@@ -178,6 +178,8 @@ bar {
         status_command i3status | i3status-wrapper
 }
 
+new_window 1pixel
+
 # Colors order:         #bord1  #bord2  #title  #tilingb
 client.focused          #268bd2 #268bd2 #fdf6e3 #002b36
 client.focused_inactive #268bd2 #fdf6e3 #268bd2 #fdf6e3
@@ -188,6 +190,8 @@ assign [class="^telegram$"] → $workspace1
 assign [class="^Icedove$"] → $workspace2
 assign [class="^Chromium$"] → $workspace5
 assign [class="^jetbrains-idea$"] → $workspace6
+
+for_window [class="^Iceweasel$"] border normal
 
 exec --no-startup-id feh --bg-center ~/Pictures/wallpaper.jpg
 
