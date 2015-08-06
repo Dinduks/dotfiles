@@ -182,8 +182,8 @@ new_window 1pixel
 
 # Colors order:         #bord1  #bord2  #title  #tilingb
 client.focused          #268bd2 #268bd2 #fdf6e3 #002b36
-client.focused_inactive #268bd2 #fdf6e3 #268bd2 #fdf6e3
-client.unfocused        #268bd2 #fdf6e3 #268bd2 #fdf6e3
+client.focused_inactive #268bd2 #eee8d5 #268bd2 #eee8d5
+client.unfocused        #268bd2 #eee8d5 #268bd2 #eee8d5
 client.urgent           #268bd2 #fdf6e3 #268bd2 #fdf6e3
 
 assign [class="^telegram$"] → $workspace1
