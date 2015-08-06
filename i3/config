@@ -201,3 +201,7 @@ bindcode 122 exec "amixer set Master 5%- unmute; killall -USR1 i3status"
 bindcode 123 exec "amixer set Master 5%+ unmute; killall -USR1 i3status"
 bindcode 198 exec "amixer set Capture toggle"
 bindcode 160 exec i3lockscreen
+
+for_window [instance="floating-term"] floating enable;
+for_window [instance="floating-term"] move scratchpad; [instance="floating-term"] scratchpad show; move position 0px 22px; resize shrink height 300px; resize grow width 683px; move scratchpad
+bindsym $mod+Shift+Return exec /home/dinduks/dotfiles/scripts/floatingterm urxvt

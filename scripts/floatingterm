@@ -1,0 +1,12 @@
+#!/bin/sh
+
+term=$1
+
+ps aux | grep $term | grep floating-term
+
+if [ "$?" -eq "1" ] ; then
+  urxvt -name floating-term &
+  sleep 0.1
+fi
+
+i3-msg '[instance="floating-term"] scratchpad show'
