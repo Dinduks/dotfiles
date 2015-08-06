@@ -13,3 +13,28 @@ URxvt.urlLauncher   : iceweasel
 
 Xft*antialias         true
 Xft*hinting           full
+
+! Source: http://dotshare.it/dots/729/
+URxvt*color0: #eee8d5
+URxvt*color8: #fdf6e3
+!red
+URxvt*color1: #dc322f
+URxvt*color9: #cb4b16
+!green
+URxvt*color2: #859900
+URxvt*color10: #93a1a1
+!yellow
+URxvt*color3: #93a1a1
+URxvt*color11: #839496
+!blue
+URxvt*color4: #268bd2
+URxvt*color12: #657b83
+!magenta
+URxvt*color5: #d33682
+URxvt*color13: #6c71c4
+!cyan
+URxvt*color6: #2aa198
+URxvt*color14: #586e75
+!white
+URxvt*color7: #073642
+URxvt*color15: #002b36
