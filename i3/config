@@ -195,6 +195,7 @@ assign [class="^jetbrains-idea$"] → $workspace6
 
 gaps inner 10
 gaps outer 0
+smart_borders on
 
 exec --no-startup-id feh --bg-center ~/Pictures/wallpaper.jpg
 
