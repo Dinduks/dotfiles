@@ -1,6 +1,7 @@
 sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop \
                          curl wget acpid pulseaudio unclutter terminator awk \
-                         rxvt-unicode-256color feh ttf-bitstream-vera
+                         rxvt-unicode-256color feh ttf-bitstream-vera \
+                         network-manager-pptp-gnome
 
 sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
 
