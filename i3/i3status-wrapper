@@ -44,15 +44,30 @@ if __name__ == '__main__':
 
         j = json.loads(line)
 
-        # Start insert
-        ram_usage = subprocess.check_output("free | awk 'NR==2{printf \"MEM: %.0f GiB\", $3/1000, $2/1024/1000, $3*100/$2 }'", shell=True)
+
+        # RAM Usage
+        command = "free | awk 'NR==2{printf \"MEM: %.0f GiB\", $3/1000, $2/1024/1000, $3*100/$2 }'"
+        ram_usage = subprocess.check_output(command, shell=True)
         j.insert(0, {'full_text':  ram_usage, 'name' : 'ram_usage'})
-        # End insert
+        # CPU Usage
+        # Space left on /
+        # Space left on /home
+        # VPN (the default one doesn't work with PPTP VPNs)
+        command = "nmcli c | grep vpn | grep -v -- -- | awk '{print $1}'"
+        vpn = ("#DEFAULT", subprocess.check_output(command, shell=True))
+        if vpn[1] == "":
+            vpn = ("#FF0000", "Off")
+        j.insert(4, { 'full_text': "VPN: " + vpn[1].strip(), 'name' : 'vpn', 'color': vpn[0] })
+
+        # Battery status
+        # Date
+        # Volume
 
         final_json = prefix+json.dumps(j)
 
         # Replace the red color (#FF0000) by Solarized's red
         final_json = re.sub('#FF0000','#DC322F', final_json)
         final_json = re.sub('#ff0000','#DC322F', final_json)
+        final_json = re.sub('#DEFAULT','#268bd2', final_json)
 
         print_line(final_json)
