@@ -49,4 +49,8 @@ ln -s $PWD/i3/wallpaper.jpg ~/Pictures
 
 ln -s $PWD/weechat ~/.weechat
 
+mkdir -p ~/.local/share/applications
+rm ~/.local/share/applications/mimeapps.list
+ln -s $PWD/mimeapps.list ~/.local/share/applications
+
 sudo usermod -a -G pulse dinduks
