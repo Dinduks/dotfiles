@@ -8,6 +8,7 @@ alias grepi="grep -i --color=auto"
 alias less="less -r"
 alias l="ls -alhG"
 alias ll="ls -lhG"
+alias o=xdg-open
 alias path='echo -e ${PATH//:/\\n}'
 alias pgrepi="pgrep -i"
 alias rgrep="grep -r --color=auto"
