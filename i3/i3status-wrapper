@@ -49,7 +49,13 @@ if __name__ == '__main__':
         command = "free | awk 'NR==2{printf \"MEM: %.0f GiB\", $3/1000, $2/1024/1000, $3*100/$2 }'"
         ram_usage = subprocess.check_output(command, shell=True)
         j.insert(0, {'full_text':  ram_usage, 'name' : 'ram_usage'})
+
         # CPU Usage
+        command = "mpstat -P ALL 1 1 | awk '/Average:/ && $2 ~ /[0-9]/ {printf \"%2.0f% \", $3}'"
+        cpu_usage = subprocess.check_output(command, shell=True)[:-1]
+        cpu_usage = " ".join(map(lambda p: p[:-1] if (len(p) == 4) else p, cpu_usage.split("\n")))
+        j.insert(1, {'full_text': "CPU: " + cpu_usage, 'name' : 'cpu_usage'})
+
         # Space left on /
         # Space left on /home
         # VPN (the default one doesn't work with PPTP VPNs)
