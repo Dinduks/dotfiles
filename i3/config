@@ -26,8 +26,10 @@ font pango:Bitstream Vera Sans Mono 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# Floating
+#floating_modifier $mod
+#bindsym $mod+Shift+space floating toggle
+#bindsym $mod+space focus mode_toggle
 
 # start a terminal
 bindsym $mod+Return exec urxvt
@@ -79,12 +81,6 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+q focus parent
