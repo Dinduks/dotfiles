@@ -133,6 +133,7 @@ smart_borders on
 
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 
+exec --no-startup-id compton
 exec --no-startup-id nm-applet
 exec --no-startup-id telegram
 exec --no-startup-id icedove
