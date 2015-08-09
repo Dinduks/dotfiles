@@ -9,6 +9,10 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+set $black "#000000"
+set $base3 "#fdf6e3"
+set $base1 "#93a1a1"
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -38,7 +42,8 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+A kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+bindsym $mod+space exec rofi -show run -terminal xterm -font 'Bitstream Vera Sans Mono 16' -lines 3 -eh 2 -bw 0 -bc "$black" -bg "$black" -fg "$base1" -hlbg "$black" -hlfg "$base3" -opacity 70 -width 100 -padding 550
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
