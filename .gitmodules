@@ -82,3 +82,6 @@
 [submodule "vim/.vim/bundle/vim-systemd"]
 	path = vim/.vim/bundle/vim-systemd
 	url = git@github.com:Matt-Deacalion/vim-systemd-syntax.git
+[submodule "vim/.vim/bundle/i3-vim-syntax"]
+	path = vim/.vim/bundle/i3-vim-syntax
+	url = git@github.com:PotatoesMaster/i3-vim-syntax.git
