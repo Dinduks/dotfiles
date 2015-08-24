@@ -98,29 +98,32 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-        colors {
-                background #fdf6e3
-                statusline #268bd2
-                separator #268bd2
-                # Colors order:    contour bg      text
-                focused_workspace  #268bd2 #268bd2 #fdf6e3
-                active_workspace   #268bd2 #fdf6e3 #268bd2
-                inactive_workspace #268bd2 #fdf6e3 #268bd2
-                urgent_workspace   #073642 #dc322f #fdf6e3
-        }
+set $fg_color #AB9C71
+set $bg_color #1D2426
+set $color1   #3E5951
 
-        status_command i3status | i3status-wrapper
+bar {
+  status_command i3status | i3status-wrapper
+  position top
+  colors {
+    separator $color1
+    background $bg_color
+    statusline $fg_color
+    focused_workspace  $fg_color $fg_color $bg_color
+    active_workspace   $fg_color $bg_color $fg_color
+    inactive_workspace $fg_color $bg_color $fg_color
+    urgent_workspace   $fg_color #FF0000   $000000
+  }
 }
 
 # No windows titles
 new_window 1pixel
 
-# Colors order:         #bord1  #bord2  #title  #tilingb
-client.focused          #268bd2 #268bd2 #fdf6e3 #002b36
-client.focused_inactive #268bd2 #eee8d5 #268bd2 #eee8d5
-client.unfocused        #268bd2 #eee8d5 #268bd2 #eee8d5
-client.urgent           #268bd2 #fdf6e3 #268bd2 #fdf6e3
+#                       border    #bg       #text
+client.focused          $bg_color $fg_color $bg_color
+client.focused_inactive $fg_color $bg_color $fg_color
+client.unfocused        $fg_color $bg_color $fg_color
+client.urgent           #FF0000   $bg_color $fg_color
 
 assign [class="^telegram$"] → $workspace1
 assign [class="^Icedove$"] → $workspace2
