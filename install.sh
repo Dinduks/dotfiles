@@ -45,7 +45,8 @@ ln -s $PWD/config/terminator/config ~/.config/terminator
 
 mkdir -p ~/Pictures/Screenshots
 
-ln -s $PWD/i3/wallpaper.png ~/Pictures
+ln -s $PWD/i3/*.png ~/Pictures
+ln -s $PWD/i3/*.jpg ~/Pictures
 
 ln -s $PWD/weechat ~/.weechat
 

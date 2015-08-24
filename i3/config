@@ -131,7 +131,7 @@ gaps inner 10
 gaps outer 0
 smart_borders on
 
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper-forest.jpg
 
 exec --no-startup-id compton
 exec --no-startup-id nm-applet
