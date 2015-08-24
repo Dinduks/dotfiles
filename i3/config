@@ -103,7 +103,7 @@ set $bg_color #1D2426
 set $color1   #3E5951
 
 bar {
-  status_command i3status | i3status-wrapper
+  status_command i3blocks
   position top
   colors {
     separator $color1
@@ -148,9 +148,9 @@ exec --no-startup-id /usr/local/bin/autolockscreen
 exec --no-startup-id unclutter
 
 bindcode 107 exec take-screenshot
-bindcode 121 exec "amixer set Master toggle; killall -USR1 i3status"
-bindcode 122 exec "amixer set Master 5%- unmute; killall -USR1 i3status"
-bindcode 123 exec "amixer set Master 5%+ unmute; killall -USR1 i3status"
+bindcode 121 exec "amixer set Master toggle; pkill -RTMIN+1 i3blocks"
+bindcode 122 exec "amixer set Master 5%- unmute; pkill -RTMIN+1 i3blocks"
+bindcode 123 exec "amixer set Master 5%+ unmute; pkill -RTMIN+1 i3blocks"
 bindcode 198 exec "amixer set Capture toggle"
 bindcode 160 exec i3lockscreen
 
