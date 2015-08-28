@@ -146,6 +146,7 @@ exec --no-startup-id i3-msg 'workspace $workspace4; exec urxvt; workspace $works
 exec --no-startup-id i3-msg 'workspace $workspace4; exec urxvt; workspace $workspace1'
 exec --no-startup-id /usr/local/bin/autolockscreen
 exec --no-startup-id unclutter
+exec --no-startup-id pasystray
 
 bindcode 107 exec take-screenshot
 bindcode 121 exec "amixer set Master toggle; pkill -RTMIN+1 i3blocks"
