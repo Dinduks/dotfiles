@@ -161,6 +161,6 @@ for_window [instance="floating-term"] move scratchpad; [instance="floating-term"
 bindsym $mod+Shift+Return exec /home/dinduks/dotfiles/scripts/floatingterm urxvt
 
 # Floating layout
-#floating_modifier $mod
-#bindsym $mod+Shift+space floating toggle
+floating_modifier $mod
+bindsym $mod+Shift+f floating toggle
 #bindsym $mod+space focus mode_toggle
