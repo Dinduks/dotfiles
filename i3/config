@@ -57,24 +57,24 @@ bindsym $mod+ampersand workspace $workspace1
 bindsym $mod+eacute workspace $workspace2
 bindsym $mod+quotedbl workspace $workspace3
 bindsym $mod+apostrophe workspace $workspace4
-bindsym $mod+parenleft workspace $workspace5
-bindcode $mod+17 workspace $workspace6
-bindcode $mod+18 workspace $workspace7
-bindcode $mod+19 workspace $workspace8
-bindcode $mod+20 workspace $workspace9
-bindcode $mod+21 workspace $workspace10
+bindcode $mod+17 workspace $workspace5
+bindcode $mod+18 workspace $workspace6
+bindcode $mod+19 workspace $workspace7
+bindcode $mod+20 workspace $workspace8
+bindcode $mod+21 workspace $workspace9
+bindcode $mod+22 workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+eacute move container to workspace $workspace2
+bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindcode $mod+Shift+17 move container to workspace $workspace6
-bindcode $mod+Shift+18 move container to workspace $workspace7
-bindcode $mod+Shift+19 move container to workspace $workspace8
-bindcode $mod+Shift+20 move container to workspace $workspace9
-bindcode $mod+Shift+21 move container to workspace $workspace10
+bindsym $mod+Shift+17 move container to workspace $workspace5
+bindcode $mod+Shift+18 move container to workspace $workspace6
+bindcode $mod+Shift+19 move container to workspace $workspace7
+bindcode $mod+Shift+20 move container to workspace $workspace8
+bindcode $mod+Shift+21 move container to workspace $workspace9
+bindcode $mod+Shift+22 move container to workspace $workspace10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
