@@ -35,6 +35,8 @@ ln -s $PWD/vim/.vimrc ~
 ln -s $PWD/git/.gitconfig ~
 ln -s $PWD/git/.gitignore_global ~
 
+ln -s /home/dinduks/dotfiles/.Xdefaults ~
+
 mkdir -p ~/.i3
 ln -s $PWD/i3/config ~/.i3
 ln -s $PWD/i3/.i3status.conf ~
