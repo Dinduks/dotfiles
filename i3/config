@@ -33,7 +33,8 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+m split h
+# 47 is the key to the right of L
+bindcode $mod+47 split h
 bindsym $mod+v split v
 
 bindsym $mod+f fullscreen toggle
