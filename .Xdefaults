@@ -7,32 +7,27 @@ URxvt.font          : xft:Bitstream Vera Sans Mono:size=8
 URxvt.internalBorder: 2
 URxvt.saveLines     : 9000
 URxvt.scrollBar     : false
-URxvt.shading       : 25
-URxvt.transparent   : true
+!URxvt.shading       : 25
+!URxvt.transparent   : true
 URxvt.utf8          : true
 URxvt.urlLauncher   : iceweasel
 URxvt.cursorBlink   : true
 
-! Color-scheme : Relic Dark
-! Author       : stark <stark@openmailbox.org>
-*background: #1D2426
-*foreground: #8FA388
-! Alternate foreground
-!*foreground: #AB9C71
-*cursorColor: #BE5E1E
-*color0:  #39474A
-*color1:  #986345
-*color2:  #788249
-*color3:  #9B6A46
-*color4:  #3E5951
-*color5:  #B9924A
-*color6:  #5d796a
-*color7:  #977D5E
-*color8:  #4C5F63
-*color9:  #B07350
-*color10: #869151
-*color11: #AF6B42
-*color12: #567A6E
-*color13: #D69D55
-*color14: #668574
-*color15: #AB9C71
+urxvt.foreground: #707070
+urxvt.background: #fafafa
+urxvt.cursorColor: #e4e4e4
+urxvt.color0: #d3d3d3
+urxvt.color1: #ff807a
+urxvt.color2: #b4c158
+urxvt.color3: #f59335
+urxvt.color4: #bbdbe2
+urxvt.color5: #fec7cd
+urxvt.color6: #95c1c0
+urxvt.color7: #707070
+urxvt.color9: #ff605a
+urxvt.color10: #94c138
+urxvt.color11: #f59335
+urxvt.color12: #9bbbe2
+urxvt.color13: #d2a4b4
+urxvt.color14: #75A1A0
+urxvt.color15: #909090

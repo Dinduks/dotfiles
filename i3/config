@@ -86,9 +86,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $fg_color #AB9C71
-set $bg_color #1D2426
-set $color1   #3E5951
+set $fg_color #707070
+set $bg_color #fafafa
+set $color1   #d3d3d3
 
 bar {
   status_command i3blocks
