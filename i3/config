@@ -116,7 +116,6 @@ client.urgent           #FF0000   $bg_color $fg_color
 assign [class="^telegram$"] → $workspace1
 assign [class="^Icedove$"] → $workspace2
 assign [class="^Chromium$"] → $workspace5
-assign [class="^jetbrains-idea$"] → $workspace6
 
 gaps inner 10
 gaps outer 0
