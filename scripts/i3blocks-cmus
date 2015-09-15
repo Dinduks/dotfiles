@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+info=$(cmus-remote -Q 2> /dev/null)
+
+if [ "$?" -ne 0 ]; then
+  echo ""
+  exit 0
+fi
+
+status=$(echo "$info" | grep "^status " | cut -d " " -f 2)
+artist=$(echo "$info" | grep "^tag artist " | tail -c +12)
+title=$(echo "$info" | grep "^tag title " | tail -c +11)
+
+if [ "$status" == "paused" ]; then
+  icon="⏸"
+elif [ "$status" == "stopped" ]; then
+  echo ""
+  exit 0
+else
+  icon="▶"
+fi
+
+echo "$icon $artist - $title"
