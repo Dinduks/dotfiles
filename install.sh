@@ -36,6 +36,7 @@ ln -s $PWD/git/.gitconfig ~
 ln -s $PWD/git/.gitignore_global ~
 
 ln -s /home/dinduks/dotfiles/.Xdefaults ~
+xrdb -merge ~/.Xdefaults
 
 mkdir -p ~/.i3
 ln -s $PWD/i3/config ~/.i3
@@ -47,6 +48,8 @@ ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom
 
 rm -rf ~/.config/terminator/config
 ln -s $PWD/config/terminator/config ~/.config/terminator
+
+ln -s $PWD/urxvt ~/.urxvt
 
 mkdir -p ~/Pictures/Screenshots
 

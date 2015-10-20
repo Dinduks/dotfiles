@@ -31,3 +31,18 @@ urxvt.color12: #9bbbe2
 urxvt.color13: #d2a4b4
 urxvt.color14: #75A1A0
 urxvt.color15: #909090
+
+URxvt.perl-ext-common: font-size,keyboard-select,clipboard
+
+URxvt.keysym.C-minus: perl:font-size:decrease
+URxvt.keysym.C-equal: perl:font-size:increase
+URxvt.font-size.step: 2
+
+URxvt.keysym.M-s: perl:keyboard-select:activate
+URxvt.keysym.M-r: perl:keyboard-select:search
+
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
