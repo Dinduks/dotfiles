@@ -36,7 +36,7 @@ URxvt.perl-ext-common: font-size,keyboard-select,clipboard
 
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.keysym.C-equal: perl:font-size:increase
-URxvt.font-size.step: 2
+URxvt.font-size.step: 1
 
 URxvt.keysym.M-s: perl:keyboard-select:activate
 URxvt.keysym.M-r: perl:keyboard-select:search
