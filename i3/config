@@ -21,7 +21,7 @@ font pango:$font 8
 bindsym $mod+Return exec urxvt
 bindcode $mod+Shift+24 kill
 
-bindsym $mod+space exec rofi -show run -terminal xterm -font '$font 16' -lines 3 -eh 2 -bw 0 -bc "$black" -bg "$black" -fg "$base1" -hlbg "$black" -hlfg "$base3" -opacity 70 -width 100 -padding 550
+bindsym $mod+space exec rofi -show run
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
