@@ -1,5 +1,5 @@
-Xft*antialias         true
-Xft*hinting           full
+xft*antialias:        true
+xft*hinting:          full
 
 URxvt.depth         : 32
 URxvt.externalBorder: 0
