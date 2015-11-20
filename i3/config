@@ -157,3 +157,4 @@ bindsym $mod+Shift+f floating toggle
 
 bindsym $mod+o exec setxkbmap us
 bindsym $mod+p exec setxkbmap fr
+exec --no-startup-id setxkbmap -option ctrl:nocaps
