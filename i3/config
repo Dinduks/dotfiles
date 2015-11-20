@@ -155,6 +155,6 @@ floating_modifier $mod
 bindsym $mod+Shift+f floating toggle
 #bindsym $mod+space focus mode_toggle
 
-bindsym $mod+o exec setxkbmap us
+bindsym $mod+o exec setxkbmap -layout us -variant intl
 bindsym $mod+p exec setxkbmap fr
 exec --no-startup-id setxkbmap -option ctrl:nocaps
