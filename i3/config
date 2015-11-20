@@ -158,3 +158,6 @@ bindsym $mod+Shift+f floating toggle
 bindsym $mod+o exec setxkbmap -layout us -variant intl
 bindsym $mod+p exec setxkbmap fr
 exec --no-startup-id setxkbmap -option ctrl:nocaps
+
+bindsym $mod+Shift+bracketleft move workspace to output left
+bindsym $mod+Shift+bracketright move workspace to output right
