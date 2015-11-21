@@ -6,13 +6,13 @@ set $base1 "#93a1a1"
 set $workspace1 "1: im"
 set $workspace2 "2: mail"
 set $workspace3 "3: www"
-set $workspace4 "4: term"
+set $workspace4 "4: ♪"
 set $workspace5 "5: www"
-set $workspace6 "6: edi"
-set $workspace7 "7: term"
+set $workspace6 "6: term"
+set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
-set $workspace10 "10"
+set $workspace10 "10: edi"
 
 set $mod Mod4
 
