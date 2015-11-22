@@ -1,7 +1,4 @@
 set $font "Bitstream Vera Sans Mono"
-set $black "#000000"
-set $base3 "#fdf6e3"
-set $base1 "#93a1a1"
 
 set $workspace1 "1: im"
 set $workspace2 "2: mail"
