@@ -1,5 +1,0 @@
-#!/bin/bash
-
-cp -r "$1" "$2"
-sed -i '' "s/$1/$2/g" "$2/.idea/.name" "$2/.idea/modules.xml" "$2/.idea/workspace.xml"
-mv "$2/$1.iml" "$2/$2.iml"
