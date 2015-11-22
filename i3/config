@@ -146,7 +146,7 @@ bindcode 198 exec "amixer set Capture toggle"
 # Hidden floating terminal
 for_window [instance="floating-term"] floating enable;
 for_window [instance="floating-term"] move scratchpad; [instance="floating-term"] scratchpad show; move position 200px 200px; resize grow height 50px; resize grow width 320px; move scratchpad
-bindsym $mod+Shift+Return exec /home/dinduks/dotfiles/scripts/floatingterm urxvt
+bindsym $mod+Shift+Return exec floatingterm urxvt
 
 # Floating layout
 floating_modifier $mod
