@@ -53,8 +53,8 @@ ln -s $PWD/urxvt ~/.urxvt
 
 mkdir -p ~/Pictures/Screenshots
 
-ln -s $PWD/i3/*.png ~/Pictures
-ln -s $PWD/i3/*.jpg ~/Pictures
+ln -s $PWD/screenlayouts ~/.screenlayouts
+ln -s $PWD/wallpapers ~/Pictures/Wallpapers
 
 mkdir -p ~/.local/share/applications
 rm ~/.local/share/applications/mimeapps.list
