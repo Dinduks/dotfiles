@@ -94,3 +94,6 @@
 [submodule "vim/.vim/bundle/vim-colorschemes"]
 	path = vim/.vim/bundle/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "vim/.vim/bundle/vim-rest-console"]
+	path = vim/.vim/bundle/vim-rest-console
+	url = git@github.com:diepm/vim-rest-console.git
