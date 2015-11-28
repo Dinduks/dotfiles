@@ -12,12 +12,12 @@ artist=$(echo "$info" | grep "^tag artist " | tail -c +12)
 title=$(echo "$info" | grep "^tag title " | tail -c +11)
 
 if [ "$status" == "paused" ]; then
-  icon="⏸"
+  icon=""
 elif [ "$status" == "stopped" ]; then
   echo ""
   exit 0
 else
-  icon="▶"
+  icon=""
 fi
 
 echo "$icon $artist - $title"
