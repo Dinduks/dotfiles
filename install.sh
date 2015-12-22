@@ -60,4 +60,6 @@ mkdir -p ~/.local/share/applications
 rm ~/.local/share/applications/mimeapps.list
 ln -s $PWD/mimeapps.list ~/.local/share/applications
 
+ln -s $PWD/compton.conf ~/.compton.conf
+
 sudo usermod -a -G pulse dinduks
