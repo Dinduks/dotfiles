@@ -2,6 +2,8 @@
 
 # From: http://plankenau.com/blog/post/gaussian-blur-lock-screen-i3lock/
 
+sleep 0.5
+
 screenshot=/tmp/screenshot.png
 blurred_ss=/tmp/blurred_sc.png
 
