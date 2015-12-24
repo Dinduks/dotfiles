@@ -7,8 +7,8 @@ URxvt.font          : xft:Bitstream Vera Sans Mono:size=8
 URxvt.internalBorder: 2
 URxvt.saveLines     : 9000
 URxvt.scrollBar     : false
-!URxvt.shading       : 25
-!URxvt.transparent   : true
+URxvt.shading       : 30
+URxvt.transparent   : true
 URxvt.utf8          : true
 URxvt.urlLauncher   : iceweasel
 URxvt.cursorBlink   : true
