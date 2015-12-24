@@ -53,6 +53,7 @@ bindcode $mod+19 workspace $workspace7
 bindcode $mod+20 workspace $workspace8
 bindcode $mod+21 workspace $workspace9
 bindcode $mod+22 workspace $workspace10
+bindcode $mod+49 workspace $workspace10
 
 # move focused container to workspace
 bindcode $mod+Shift+10 move container to workspace $workspace1
@@ -65,6 +66,7 @@ bindcode $mod+Shift+19 move container to workspace $workspace7
 bindcode $mod+Shift+20 move container to workspace $workspace8
 bindcode $mod+Shift+21 move container to workspace $workspace9
 bindcode $mod+Shift+22 move container to workspace $workspace10
+bindcode $mod+Shift+49 move container to workspace $workspace10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
