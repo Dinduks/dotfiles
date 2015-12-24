@@ -10,7 +10,7 @@ URxvt.scrollBar     : false
 URxvt.shading       : 30
 URxvt.transparent   : true
 URxvt.utf8          : true
-URxvt.urlLauncher   : iceweasel
+URxvt.urlLauncher   : firefox
 URxvt.cursorBlink   : true
 
 urxvt.foreground: #707070

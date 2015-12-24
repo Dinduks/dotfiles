@@ -122,7 +122,7 @@ exec --no-startup-id compton
 exec --no-startup-id nm-applet
 exec --no-startup-id telegram
 exec --no-startup-id icedove
-exec --no-startup-id i3-msg 'workspace $workspace3; exec iceweasel; workspace $workspace1'
+exec --no-startup-id i3-msg 'workspace $workspace3; exec firefox; workspace $workspace1'
 exec --no-startup-id i3-msg 'workspace $workspace1; exec urxvt -e weechat; workspace $workspace1'
 exec --no-startup-id i3-msg 'workspace $workspace4; exec urxvt; workspace $workspace1'
 exec --no-startup-id i3-msg 'workspace $workspace4; exec urxvt; workspace $workspace1'

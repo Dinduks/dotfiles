@@ -1,6 +1,6 @@
 [Default Applications]
 x-scheme-handler/tg=telegramdesktop.desktop
-application/pdf=iceweasel.desktop
-image/jpeg=iceweasel.desktop
-image/png=iceweasel.desktop
-image/gif=iceweasel.desktop
+application/pdf=firefox.desktop
+image/jpeg=firefox.desktop
+image/png=firefox.desktop
+image/gif=firefox.desktop
