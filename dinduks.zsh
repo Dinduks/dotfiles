@@ -18,6 +18,7 @@ alias treea="tree -a"
 alias turnoff="sudo shutdown -h now"
 alias wai="whoami"
 
+cpstat     () { tar c "$1" | pv | tar x -C "$2" }
 loop       () { while sleep 0.2; do $*; done; }
 firstl     () { head -n 1 }
 kmp        () { kill -9 `pgrep -i $*`; }
