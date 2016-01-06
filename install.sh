@@ -47,9 +47,6 @@ sudo ln -s $PWD/i3/.i3status-wrapper /usr/local/bin
 
 ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom
 
-rm -rf ~/.config/terminator/config
-ln -s $PWD/config/terminator/config ~/.config/terminator
-
 ln -s $PWD/urxvt ~/.urxvt
 
 mkdir -p ~/Pictures/Screenshots
