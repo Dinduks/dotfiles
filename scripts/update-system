@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# From http://stackoverflow.com/a/32744703/604041
+echocolor() {
+  COLOR='\033[1;33m'
+  NC='\033[0m'
+  printf "${COLOR}$1${NC}\n"
+}
+
+notify-send "Starting a system update..."
+
+echocolor "Entering ~/dotfiles/..."
+cd /home/dinduks/dotfiles/
+echocolor "Stashing..."
+su dinduks -c "git stash -u"
+echocolor "Pulling every submodule..."
+su dinduks -c "git submodule foreach git pull"
+echocolor "Adding the updated submodules to the staging area..."
+su dinduks -c "git add ."
+echocolor "Commiting..."
+su dinduks -c 'git commit -m "[Vim] Update all the plugins"'
+echocolor "Pushing..."
+su dinduks -c "git push"
+echocolor "Poping the stash..."
+su dinduks -c "git stash pop"
+
+notify-send "Done updating dotfiles."
+
+echocolor "\nEntering ~/.oh-my-zsh/..."
+cd /home/dinduks/.oh-my-zsh/
+echocolor "Reseting the state..."
+su dinduks -c "git checkout ."
+echocolor "Pulling the new changes..."
+su dinduks -c "git pull"
+
+notify-send "Done updating oh-my-zsh."
+
+echocolor "\nAptitude update..."
+aptitude -y update
+echocolor "Aptitude upgrade..."
+aptitude -y upgrade
+
+notify-send "Done updating the packages. Finished."
+
+echocolor "\nDone."
