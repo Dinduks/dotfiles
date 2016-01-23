@@ -47,6 +47,7 @@ au BufNewFile,BufRead Gemfile     set  filetype=ruby
 au BufNewFile,BufRead *.js        setl shiftwidth=4 tabstop=4
 au BufNewFile,BufRead *.html      setl shiftwidth=4 tabstop=4
 au BufNewFile,BufRead *.java      setl shiftwidth=4 tabstop=4
+au BufNewFile,BufRead *.txt       set spell
 
 " Search stuff
 set ignorecase
@@ -64,6 +65,8 @@ map <F5> :tabnew<CR>
 map <F6> :tabclose<CR>
 map <F7> gT
 map <F8> gt
+map <silent> <F9> :silent setlocal spell! spelllang=en<CR>
+map <silent> <F10> :silent setlocal spell! spelllang=fr<CR>
 map <LEADER>n :NERDTreeToggle<CR>
 map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
