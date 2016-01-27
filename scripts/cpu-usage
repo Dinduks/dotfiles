@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+x = `mpstat -P ALL 1 1 | awk '/Average:/ && $2 ~ /[0-9]/ {printf "%2.0f% ", $3}'`
+without_percents = x.gsub '%', ''
+values = without_percents.split ' '
+formated_array = values.map do |v|
+  if v.to_s.length == 1
+    "  " + v
+  elsif v.to_s.length == 2
+    " " + v
+  else
+    v
+  end
+end
+
+puts formated_array.join ' '
