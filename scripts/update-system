@@ -35,11 +35,7 @@ su dinduks -c "git pull"
 
 notify-send "Done updating oh-my-zsh."
 
-echocolor "\nAptitude update..."
-aptitude -y update
-echocolor "Aptitude upgrade..."
-aptitude -y upgrade
 
-notify-send "Done updating the packages. Finished."
+notify-send "Finished."
 
 echocolor "\nDone."
