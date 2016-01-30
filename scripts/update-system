@@ -30,12 +30,17 @@ echocolor "\nEntering ~/.oh-my-zsh/..."
 cd /home/dinduks/.oh-my-zsh/
 echocolor "Reseting the state..."
 su dinduks -c "git checkout ."
-echocolor "Pulling the new changes..."
+echocolor "Pulling new changes..."
 su dinduks -c "git pull"
 
 notify-send "Done updating oh-my-zsh."
 
-
-notify-send "Finished."
+echocolor "Updating i3-gaps..."
+git clone --branch gaps https://github.com/Airblader/i3.git /tmp/i3
+cd /tmp/i3
+make -j 4
+make install
+i3-msg restart
+notify-send "Done updating i3-gaps. Finished."
 
 echocolor "\nDone."
