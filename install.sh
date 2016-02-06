@@ -4,7 +4,7 @@ sudo aptitude -y install i3 i3lock xautolock vim zsh scrot imagemagick htop \
                          network-manager-pptp-gnome compton rofi apt apt-file \
                          manpages-dev manpages-posix-dev i3blocks pasystray \
                          pavucontrol fonts-font-awesome network-manager-gnome \
-                         pv
+                         pv shutter
 
 sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
 
