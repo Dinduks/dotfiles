@@ -18,6 +18,11 @@ alias treea="tree -a"
 alias turnoff="sudo shutdown -h now"
 alias wai="whoami"
 
+apti       () { sudo aptitude install $1 }
+aptt       () { sudo aptitude remove $1 }
+apts       () { aptitude search $1 }
+aptud      () { sudo apt-get update }
+aptug      () { sudo apt-get upgrade }
 cpstat     () { tar c "$1" | pv | tar x -C "$2" }
 loop       () { while sleep 0.2; do $*; done; }
 firstl     () { head -n 1 }
