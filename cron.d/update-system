@@ -1,1 +1,1 @@
-0 * * * * root /usr/local/bin/update-system
+0 * * * * root mkdir -p /var/log/update-system/ && /usr/local/bin/update-system | tee /var/log/update-system/`date +"%Y-%m-%d_%H:%M:%S"`.log
