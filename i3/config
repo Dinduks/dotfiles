@@ -1,19 +1,19 @@
 set $font "Bitstream Vera Sans Mono"
 
-set $workspace1 "1: im"
-set $workspace2 "2: mail"
-set $workspace3 "3: www"
-set $workspace4 "4: ♪"
-set $workspace5 "5: www"
-set $workspace6 "6: term"
+set $workspace1 "1: "
+set $workspace2 "2: "
+set $workspace3 "3: "
+set $workspace4 "4: "
+set $workspace5 "5: "
+set $workspace6 "6: "
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
-set $workspace10 "10: edi"
+set $workspace10 "10: "
 
 set $mod Mod4
 
-font pango:$font 8
+font pango:$font, FontAwesome 8
 
 bindsym $mod+Return exec urxvt
 bindcode $mod+Shift+24 kill
