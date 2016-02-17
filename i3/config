@@ -1,4 +1,4 @@
-set $font "Bitstream Vera Sans Mono"
+set $font Monospace
 
 set $workspace1 "1: "
 set $workspace2 "2: "
