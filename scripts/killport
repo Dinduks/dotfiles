@@ -1,0 +1,13 @@
+#!/bin/sh
+
+info=$(netstat -tlnp 2>&1 | awk "/:$1/ {print \$NF}")
+pid=$(echo $info | cut -d '/' -f 1)
+processname=$(echo $info | cut -d '/' -f 2)
+
+if [ -z "$info" ]; then
+    echo "No process found."
+    exit 1
+fi
+
+kill -9 $pid
+echo "Process '$processname' killed."
