@@ -36,5 +36,6 @@ ql         () { qlmanage -p "$*" >& /dev/null; }
 scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
 trash      () { command mv "$@" ~/.Trash }
 use-java   () { export JAVA_HOME=`/usr/libexec/java_home -v 1.$1` }
+weather    () { curl http://wttr.in/$1 }
 
 export ZSH_THEME=robbyrussell
