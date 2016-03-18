@@ -26,6 +26,7 @@ aptug      () { sudo apt-get upgrade }
 cpstat     () { tar c "$1" | pv | tar x -C "$2" }
 loop       () { while sleep 0.2; do $*; done; }
 firstl     () { head -n 1 }
+killport   () { fuser -k $1/tcp }
 kmp        () { kill -9 `pgrep -i $*`; }
 lastl      () { tail -n 1 }
 mkcd       () { mkdir -p "$*"; cd "$*"; }
