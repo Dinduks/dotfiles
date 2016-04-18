@@ -10,7 +10,7 @@ URxvt.scrollBar     : false
 URxvt.shading       : 30
 URxvt.transparent   : true
 URxvt.utf8          : true
-URxvt.urlLauncher   : firefox
+URxvt.urlLauncher   : google-chrome
 URxvt.cursorBlink   : true
 
 URxvt.perl-ext-common: font-size,keyboard-select,clipboard,url-select
