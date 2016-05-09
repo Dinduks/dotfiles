@@ -12,26 +12,26 @@ notify-send "Starting a system update..."
 echocolor "Entering ~/dotfiles/..."
 cd /home/dinduks/dotfiles/
 echocolor "Stashing..."
-su dinduks -c "git stash -u"
+git stash -u
 echocolor "Pulling every submodule..."
-su dinduks -c "git submodule foreach git pull"
+git submodule foreach git pull
 echocolor "Adding the updated submodules to the staging area..."
-su dinduks -c "git add ."
+git add .
 echocolor "Commiting..."
-su dinduks -c 'git commit -m "[Vim] Update all the plugins"'
+git commit -m "[Vim] Update all the plugins"
 echocolor "Pushing..."
-su dinduks -c "git push"
+git push
 echocolor "Poping the stash..."
-su dinduks -c "git stash pop"
+git stash pop
 
 notify-send "Done updating dotfiles."
 
 echocolor "\nEntering ~/.oh-my-zsh/..."
 cd /home/dinduks/.oh-my-zsh/
 echocolor "Reseting the state..."
-su dinduks -c "git checkout ."
+git checkout .
 echocolor "Pulling new changes..."
-su dinduks -c "git pull"
+git pull
 
 notify-send "Done updating oh-my-zsh."
 
@@ -39,7 +39,7 @@ echocolor "Updating i3-gaps..."
 git clone --branch gaps https://github.com/Airblader/i3.git /tmp/i3
 cd /tmp/i3
 make -j 4
-make install
+sudo make install
 i3-msg restart
 notify-send "Done updating i3-gaps. Finished."
 
