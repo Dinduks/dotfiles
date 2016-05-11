@@ -154,6 +154,9 @@ bindsym $mod+Shift+f floating toggle
 #bindsym $mod+space focus mode_toggle
 
 exec --no-startup-id setxkbmap -layout us -variant intl -option ctrl:nocaps
+exec --no-startup-id xmodmap -e "keycode 49 = backslash bar backslash bar notsign brokenbar notsign"
+exec --no-startup-id xmodmap -e "keycode 51 = BackSpace BackSpace BackSpace BackSpace"
+exec --no-startup-id xmodmap -e "keycode 22 = dead_grave dead_tilde dead_grave dead_tilde grave asciitilde grave"
 
 bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
