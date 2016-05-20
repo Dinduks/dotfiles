@@ -97,3 +97,6 @@
 [submodule "vim/.vim/bundle/vim-rest-console"]
 	path = vim/.vim/bundle/vim-rest-console
 	url = git@github.com:diepm/vim-rest-console.git
+[submodule "vim/.vim/bundle/typescript-vim"]
+	path = vim/.vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
