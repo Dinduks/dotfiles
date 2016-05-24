@@ -11,6 +11,7 @@ alias ll="ls -lhG"
 alias o=xdg-open
 alias path='echo -e ${PATH//:/\\n}'
 alias pgrepi="pgrep -i"
+alias reboot="systemctl reboot"
 alias rgrep="grep -r --color=auto"
 alias rgrepi="grep -ri --color=auto"
 alias rspec="rspec --color"
