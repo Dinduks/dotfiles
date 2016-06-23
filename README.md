@@ -29,3 +29,6 @@ In order for audio to work, the user should be in the `pulse` group.
 * Unicode fonts: `yaourt -S ttf-dejavu`  
 * Arabic fonts: Install any of these fonts:
 https://wiki.archlinux.org/index.php/Fonts#Arabic_.26_Urdu
+
+### Set correct time
+`sudo timedatectl set-timezone 'Europe/Paris' && sudo timedatectl set-ntp true`
