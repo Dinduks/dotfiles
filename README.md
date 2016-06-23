@@ -24,3 +24,8 @@ In order for audio to work, the user should be in the `pulse` group.
     needed too.
 * Some fonts, such as the _*.pcf_ ones are, are "bitmap" fonts.  
     Run `dpkg-reconfigure fontconfig-config` and enable them in the last step.
+
+#### Unicode and arabic fonts in Arch Linux
+* Unicode fonts: `yaourt -S ttf-dejavu`  
+* Arabic fonts: Install any of these fonts:
+https://wiki.archlinux.org/index.php/Fonts#Arabic_.26_Urdu
