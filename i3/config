@@ -158,10 +158,3 @@ exec --no-startup-id xmodmap -e "keycode 22 = dead_grave dead_tilde dead_grave d
 
 bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
-
-# Monitors configuration
-exec --no-startup-id xrandr --newmode "2560x1080_50.00"  188.75  2560 2712 2976 3392  1080 1083 1093 1114 -hsync +vsync
-exec --no-startup-id xrandr --addmode HDMI1 2560x1080_50.00
-bindcode $mod+59 exec ~/.screenlayouts/1366x768.sh
-bindcode $mod+60 exec ~/.screenlayouts/2160x1920.sh
-bindcode $mod+61 exec ~/.screenlayouts/2560x1080.sh
