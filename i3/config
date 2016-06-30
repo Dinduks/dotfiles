@@ -127,6 +127,7 @@ exec --no-startup-id i3-msg 'workspace $workspace1; exec urxvt -e weechat; works
 exec --no-startup-id icedove
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
+exec --no-startup-id redshift -l 48.856614:2.352222
 exec --no-startup-id shutter
 exec --no-startup-id telegram
 exec --no-startup-id unclutter
