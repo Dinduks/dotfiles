@@ -60,4 +60,7 @@ ln -s $PWD/mimeapps.list ~/.local/share/applications
 
 ln -s $PWD/compton.conf ~/.compton.conf
 
+mkdir -p $HOME/.config/dunst
+ln -s $PWD/dunstrc ~/.config/dunst/dunstrc
+
 sudo usermod -a -G pulse dinduks
