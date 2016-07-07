@@ -13,11 +13,13 @@ lyrics tokyoblade
 eos
 
 if not ARGV.empty?
+  open_command = RUBY_PLATFORM =~ /linux/ ? "xdg-open" : "open"
+
   band_name = ARGV[0]
   band_link = "http://darklyrics.com/#{band_name[0]}/#{band_name}.html"
 
   if ARGV.length == 1
-    system("open", band_link)
+    system(open_command, band_link)
   elsif ARGV.length == 2
     song_name = ARGV[1]
 
@@ -31,7 +33,7 @@ if not ARGV.empty?
       song_clean_rel_url = song_rel_url[-song_rel_url.length+3, song_rel_url.length-3]
       song_link = "http://darklyrics.com/#{song_clean_rel_url}"
 
-      system(RUBY_PLATFORM =~ /linux/ ? "xdg-open" : "open", song_link)
+      system(open_command, song_link)
     rescue OpenURI::HTTPError
       puts "Band not found"
     end
