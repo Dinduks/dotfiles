@@ -41,9 +41,7 @@ xrdb -merge ~/.Xdefaults
 
 mkdir -p ~/.i3
 ln -s $PWD/i3/config ~/.i3
-ln -s $PWD/i3/.i3status.conf ~
 ln -s $PWD/i3/.i3blocks.conf ~
-sudo ln -s $PWD/i3/.i3status-wrapper /usr/local/bin
 
 ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom
 
