@@ -73,14 +73,14 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize shrink height 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+  bindsym h resize shrink width 10 px or 10 ppt
+  bindsym j resize shrink height 10 px or 10 ppt
+  bindsym k resize grow height 10 px or 10 ppt
+  bindsym l resize grow width 10 px or 10 ppt
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -112,9 +112,10 @@ client.focused_inactive $fg_color $bg_color $fg_color
 client.unfocused        $fg_color $bg_color $fg_color
 client.urgent           #FF0000   $bg_color $fg_color
 
-assign [class="^telegram$"] → $workspace1
-assign [class="^Icedove$"] → $workspace2
-assign [class="^Chromium$"] → $workspace5
+assign [class="^Chromium$"]      → $workspace5
+assign [class="Slack"]           → $workspace1
+assign [class="^telegram$"]      → $workspace1
+assign [class=".*Thunderbird.*"] → $workspace2
 
 gaps inner 10
 gaps outer 0
@@ -122,14 +123,15 @@ smart_borders on
 
 exec --no-startup-id /usr/local/bin/autolockscreen
 exec --no-startup-id compton
-exec --no-startup-id i3-msg 'workspace $workspace3; exec firefox; workspace $workspace1'
+exec --no-startup-id dunst
 exec --no-startup-id i3-msg 'workspace $workspace1; exec urxvt -e weechat; workspace $workspace1'
-exec --no-startup-id icedove
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id redshift -l 48.856614:2.352222
+exec --no-startup-id redshift-gtk
 exec --no-startup-id shutter
 exec --no-startup-id telegram
+exec --no-startup-id thunderbird
 exec --no-startup-id unclutter
 
 bindcode 107 exec take-screenshot
@@ -151,11 +153,6 @@ bindsym $mod+Shift+Return exec floatingterm urxvt
 floating_modifier $mod
 bindsym $mod+Shift+f floating toggle
 #bindsym $mod+space focus mode_toggle
-
-exec --no-startup-id setxkbmap -layout us -variant intl -option ctrl:nocaps
-exec --no-startup-id xmodmap -e "keycode 49 = backslash bar backslash bar notsign brokenbar notsign"
-exec --no-startup-id xmodmap -e "keycode 51 = BackSpace BackSpace BackSpace BackSpace"
-exec --no-startup-id xmodmap -e "keycode 22 = dead_grave dead_tilde dead_grave dead_tilde grave asciitilde grave"
 
 bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
