@@ -16,7 +16,7 @@ function install_yaourt {
 }
 
 function install_user_programs {
-  yaourt -S --needed i3-gaps-git i3lock zsh xautolock scrot imagemagick \
+  yaourt -S --needed i3-gaps-git zsh xautolock scrot imagemagick \
     htop curl wget unclutter awk sysstat feh openssh gedit xclip compton rofi \
     pavucontrol shutter arandr acpi acpid redshift-git gedit libreoffice \
     thefuck tree ttf-dejavu ttf-arabeyes-fonts slack-desktop alsa-utils dunst \
@@ -25,7 +25,7 @@ function install_user_programs {
     rxvt-unicode google-chrome thunderbird i3blocks weechat \
     telegram-desktop-bin xorg-xrdb pkgfile pasystray pulseaudio \
     linux-manpages ttf-font-awesome network-manager-applet xorg-xwininfo \
-    dwb-git jdk8-openjdk
+    dwb-git jdk8-openjdk perl-anyevent-i3 i3lock-fancy-git
 }
 
 function install_cel {
@@ -55,7 +55,6 @@ function setup_scripts {
 }
 
 function setup_i3lock {
-  sudo ln -s /usr/local/bin/{i3lockscreen,lock}
   sudo cp $PWD/systemd/i3lock.service /etc/systemd/system
   sudo systemctl enable i3lock.service
   sudo systemctl daemon-reload
