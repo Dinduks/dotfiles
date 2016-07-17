@@ -1,8 +1,16 @@
 function install_git {
+  if command_exists git; then
+    colored_echo "Git already installed. Skipping."; return;
+  fi
+
   sudo pacman -S --needed git
 }
 
 function install_yaourt {
+  if command_exists yaourt; then
+    colored_echo "Yaourt already installed. Skipping."; return;
+  fi
+
   cd /tmp
   git clone https://aur.archlinux.org/package-query.git
   cd package-query
@@ -29,15 +37,27 @@ function install_user_programs {
 }
 
 function install_cel {
+  if command_exists cel; then
+    colored_echo "cel already installed. Skipping."; return;
+  fi
+
   sudo curl https://raw.githubusercontent.com/Dinduks/change-execute-loop/master/cel -o /usr/local/bin/cel
   sudo chmod +x /usr/local/bin/cel
 }
 
 function install_ohmyzsh {
+  if [ -d ~/.oh-my-zsh ]; then
+    colored_echo "oh-my-zsh already installed. Skipping."; return;
+  fi
+
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
 function install_hr {
+  if command_exists hr; then
+    colored_echo "hr already installed. Skipping."; return;
+  fi
+
   sudo curl https://raw.githubusercontent.com/LuRsT/hr/master/hr -o /usr/local/bin/hr
   sudo chmod +x /usr/local/bin/hr
 }
@@ -50,7 +70,7 @@ function setup_cron_jobs {
 
 function setup_scripts {
   for script in scripts/*; do
-    sudo ln -s $PWD/$script /usr/local/bin
+    sudo ln -s $PWD/$script /usr/local/bin &> /dev/null
   done
 }
 
@@ -61,13 +81,13 @@ function setup_i3lock {
 }
 
 function setup_vim {
-  ln -s $PWD/vim/.vim ~
-  ln -s $PWD/vim/.vimrc ~
+  ln -s $PWD/vim/.vim ~ &> /dev/null
+  ln -s $PWD/vim/.vimrc ~ &> /dev/null
 }
 
 function setup_git {
-  ln -s $PWD/git/.gitconfig ~
-  ln -s $PWD/git/.gitignore_global ~
+  ln -s $PWD/git/.gitconfig ~ &> /dev/null
+  ln -s $PWD/git/.gitignore_global ~ &> /dev/null
 }
 
 function create_screenshots_dir {
@@ -75,18 +95,18 @@ function create_screenshots_dir {
 }
 
 function setup_xdefaults {
-  ln -s /home/dinduks/dotfiles/.Xdefaults ~
+  ln -s /home/dinduks/dotfiles/.Xdefaults ~ &> /dev/null
   xrdb ~/.Xdefaults
 }
 
 function setup_i3_config {
   mkdir -p ~/.i3
-  ln -s $PWD/i3/config ~/.i3
-  ln -s $PWD/i3/.i3blocks.conf ~
+  ln -s $PWD/i3/config ~/.i3 &> /dev/null
+  ln -s $PWD/i3/.i3blocks.conf ~ &> /dev/null
 }
 
 function setup_zsh_config {
-  ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom
+  ln -s $PWD/dinduks.zsh ~/.oh-my-zsh/custom &> /dev/null
 }
 
 function setup_urxvt_config {
@@ -101,18 +121,27 @@ function setup_mimeapps {
 }
 
 function setup_compton_config {
-  ln -s $PWD/compton.conf ~/.compton.conf
+  ln -s $PWD/compton.conf ~/.compton.conf &> /dev/null
 }
 
 function setup_dunst_config {
   mkdir -p $HOME/.config/dunst
-  ln -s $PWD/config/dunst/dunstrc ~/.config/dunst/dunstrc
+  ln -s $PWD/config/dunst/dunstrc ~/.config/dunst/dunstrc &> /dev/null
+}
+
+# From http://stackoverflow.com/a/3931779
+command_exists () {
+  type "$1" &> /dev/null;
+}
+
+colored_echo () {
+  echo -e "\e[33m$1\e[39m"
 }
 
 function run {
-  echo -e "\e[33mRunning $1...\e[39m"
+  colored_echo "Running $1..."
   eval $1
-  echo -e "\e[33mFinished running $1.\e[39m\n"
+  colored_echo "Finished running $1.\n"
 }
 
 run "install_git"
