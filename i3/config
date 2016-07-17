@@ -130,6 +130,7 @@ exec --no-startup-id pasystray
 exec --no-startup-id redshift -l 48.856614:2.352222
 exec --no-startup-id redshift-gtk
 exec --no-startup-id shutter
+exec --no-startup-id slack
 exec --no-startup-id telegram
 exec --no-startup-id thunderbird
 exec --no-startup-id unclutter
