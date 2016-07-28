@@ -155,5 +155,16 @@ floating_modifier $mod
 bindcode $mod+Shift+41 floating toggle
 #bindsym $mod+space focus mode_toggle
 
+bindcode $mod+32 exec \
+           setxkbmap -layout us -variant intl -option ctrl:nocaps && \
+           xmodmap -e "keycode 49 = backslash bar backslash bar notsign brokenbar notsign" && \
+           xmodmap -e "keycode 51 = BackSpace BackSpace BackSpace BackSpace" && \
+           xmodmap -e "keycode 22 = dead_grave dead_tilde dead_grave dead_tilde grave asciitilde grave"
+bindcode $mod+33 exec \
+           setxkbmap ara -variant basic -option ctrl:nocaps && \
+           xmodmap -e "keycode 49 = backslash bar backslash bar" && \
+           xmodmap -e "keycode 51 = BackSpace BackSpace BackSpace BackSpace" && \
+           xmodmap -e "keycode 22 = Arabic_thal Arabic_shadda Arabic_thal Arabic_shadda"
+
 bindcode $mod+Shift+34 move workspace to output left
 bindcode $mod+Shift+35 move workspace to output right
