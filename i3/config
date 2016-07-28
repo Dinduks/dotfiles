@@ -20,25 +20,25 @@ bindcode $mod+Shift+24 kill
 
 bindsym $mod+space exec rofi -show run
 
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindcode $mod+43 focus left
+bindcode $mod+44 focus down
+bindcode $mod+45 focus up
+bindcode $mod+46 focus right
 
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindcode $mod+Shift+43 move left
+bindcode $mod+Shift+44 move down
+bindcode $mod+Shift+45 move up
+bindcode $mod+Shift+46 move right
 
 # 47 is the key to the right of L
 bindcode $mod+47 split h
-bindsym $mod+v split v
+bindcode $mod+55 split v
 
-bindsym $mod+f fullscreen toggle
+bindcode $mod+41 fullscreen toggle
 
-bindsym $mod+s layout stacking
+bindcode $mod+39 layout stacking
 bindcode $mod+25 layout tabbed
-bindsym $mod+e layout toggle split
+bindcode $mod+26 layout toggle split
 
 bindcode $mod+24 focus parent
 
@@ -68,22 +68,22 @@ bindcode $mod+Shift+21 move container to workspace $workspace9
 bindcode $mod+Shift+22 move container to workspace $workspace10
 bindcode $mod+Shift+49 move container to workspace $workspace10
 
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindcode $mod+Shift+54 reload
+bindcode $mod+Shift+27 restart
+bindcode $mod+Shift+26 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 mode "resize" {
-  bindsym h resize shrink width 10 px or 10 ppt
-  bindsym j resize shrink height 10 px or 10 ppt
-  bindsym k resize grow height 10 px or 10 ppt
-  bindsym l resize grow width 10 px or 10 ppt
+  bindcode 43 resize shrink width 10 px or 10 ppt
+  bindcode 44 resize shrink height 10 px or 10 ppt
+  bindcode 45 resize grow height 10 px or 10 ppt
+  bindcode 46 resize grow width 10 px or 10 ppt
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
-  bindsym $mod+r mode "default"
+  bindcode $mod+27 mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindcode $mod+27 mode "resize"
 
 set $fg_color #FFFFFF
 set $bg_color #262A2D
@@ -152,8 +152,8 @@ bindsym $mod+Shift+Return exec floatingterm urxvt
 
 # Floating layout
 floating_modifier $mod
-bindsym $mod+Shift+f floating toggle
+bindcode $mod+Shift+41 floating toggle
 #bindsym $mod+space focus mode_toggle
 
-bindsym $mod+Shift+bracketleft move workspace to output left
-bindsym $mod+Shift+bracketright move workspace to output right
+bindcode $mod+Shift+34 move workspace to output left
+bindcode $mod+Shift+35 move workspace to output right
