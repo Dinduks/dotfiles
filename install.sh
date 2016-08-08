@@ -33,7 +33,8 @@ function install_user_programs {
     rxvt-unicode google-chrome thunderbird i3blocks weechat \
     telegram-desktop-bin xorg-xrdb pkgfile pasystray pulseaudio \
     linux-manpages ttf-font-awesome network-manager-applet xorg-xwininfo \
-    dwb-git jdk8-openjdk perl-anyevent-i3 i3lock-fancy-git
+    dwb-git jdk8-openjdk perl-anyevent-i3 i3lock-fancy-git gnome-disk-utility \
+    whois networkmanager-openvpn vlc gthumb chromium unzip uuid lsof
 }
 
 function install_cel {
