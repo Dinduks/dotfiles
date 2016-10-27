@@ -1,0 +1,69 @@
+{
+  "border": "pixel",
+  "floating": "auto_off",
+  "layout": "splitv",
+  "percent": 0.5,
+  "type": "con",
+  "nodes": [
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "geometry": {
+        "height": 316,
+        "width": 644,
+        "x": 0,
+        "y": 0
+      },
+      "name": "WeeChat",
+      "percent": 0.5,
+      "swallows": [
+        {
+          "class": "^URxvt$",
+          "instance": "^urxvt$"
+        }
+      ],
+      "type": "con"
+    },
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "geometry": {
+        "height": 358,
+        "width": 666,
+        "x": 11,
+        "y": 399
+      },
+      "name": "Telegram",
+      "percent": 0.5,
+      "swallows": [
+        {
+          "title": "^Telegram$"
+        }
+      ],
+      "type": "con"
+    }
+  ]
+}
+
+{
+  "border": "pixel",
+  "current_border_width": 1,
+  "floating": "auto_off",
+  "geometry": {
+    "height": 729,
+    "width": 666,
+    "x": 689,
+    "y": 28
+  },
+  "name": "Slack",
+  "percent": 0.5,
+  "swallows": [
+    {
+      "class": "^Slack$",
+      "instance": "^slack$"
+    }
+  ],
+  "type": "con"
+}

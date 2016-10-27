@@ -117,6 +117,8 @@ assign [class="Slack"]           → $workspace1
 assign [class="^telegram$"]      → $workspace1
 assign [class=".*Thunderbird.*"] → $workspace2
 
+exec --no-startup-id "i3-msg 'workspace 1: ; append_layout ~/.i3/workspace-1.json'"
+
 gaps inner 10
 gaps outer 0
 smart_borders on

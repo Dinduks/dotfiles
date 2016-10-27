@@ -104,6 +104,7 @@ function setup_i3_config {
   mkdir -p ~/.i3
   ln -s $PWD/i3/config ~/.i3 &> /dev/null
   ln -s $PWD/i3/.i3blocks.conf ~ &> /dev/null
+  ln -s $PWD/i3/workspace** ~/.i3 &> /dev/null
 }
 
 function setup_zsh_config {
