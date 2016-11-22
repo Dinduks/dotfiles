@@ -112,7 +112,6 @@ client.focused_inactive $fg_color $bg_color $fg_color
 client.unfocused        $fg_color $bg_color $fg_color
 client.urgent           #FF0000   $bg_color $fg_color
 
-assign [class="^Chromium$"]      → $workspace5
 assign [class="Slack"]           → $workspace1
 assign [class="^telegram$"]      → $workspace1
 assign [class=".*Thunderbird.*"] → $workspace2
