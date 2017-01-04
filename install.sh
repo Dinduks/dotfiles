@@ -96,9 +96,9 @@ function create_screenshots_dir {
   mkdir -p ~/Pictures/Screenshots
 }
 
-function setup_xdefaults {
-  ln -s /home/dinduks/dotfiles/.Xdefaults ~ &> /dev/null
-  xrdb ~/.Xdefaults
+function setup_xresources {
+  ln -s /home/dinduks/dotfiles/.Xresources ~ &> /dev/null
+  xrdb ~/.Xresources
 }
 
 function setup_i3_config {
@@ -158,7 +158,7 @@ run "setup_scripts"
 run "setup_vim"
 run "setup_git"
 run "create_screenshots_dir"
-run "setup_xdefaults"
+run "setup_xresources"
 run "setup_dunst_config"
 run "setup_mimeapps"
 run "setup_compton_config"
