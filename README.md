@@ -13,6 +13,10 @@ Run `sudo upragde-grub` when done.
 #### Auto start X at login
 https://wiki.archlinux.org/index.php/Xinitrc#Autostart_X_at_login
 
+#### Auto load .Xresources of .Xresources
+Add `[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources` in `~/.xinitrc`,
+before the `exec` line.
+
 ### Audio
 In order for audio to work, the user should be in the `pulse` group.
 
