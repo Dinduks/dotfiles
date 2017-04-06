@@ -44,8 +44,6 @@ au BufNewFile,BufRead *.md        setl filetype=markdown
 au BufNewFile,BufRead *.rst.inc   set  filetype=rst
 au BufNewFile,BufRead *.ru        set  filetype=ruby
 au BufNewFile,BufRead Gemfile     set  filetype=ruby
-au BufNewFile,BufRead *.js        setl shiftwidth=4 tabstop=4
-au BufNewFile,BufRead *.html      setl shiftwidth=4 tabstop=4
 au BufNewFile,BufRead *.java      setl shiftwidth=4 tabstop=4
 
 " Search stuff
