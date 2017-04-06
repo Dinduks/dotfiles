@@ -113,7 +113,6 @@ client.unfocused        $fg_color $bg_color $fg_color
 client.urgent           #FF0000   $bg_color $fg_color
 
 assign [class="Slack"]           → $workspace1
-assign [class="^telegram$"]      → $workspace1
 assign [class=".*Thunderbird.*"] → $workspace2
 
 exec --no-startup-id "i3-msg 'workspace 1: ; append_layout ~/.i3/workspace-1.json'"
@@ -132,7 +131,6 @@ exec --no-startup-id redshift -l 48.856614:2.352222
 exec --no-startup-id redshift-gtk
 exec --no-startup-id shutter
 exec --no-startup-id slack
-exec --no-startup-id telegram
 exec --no-startup-id thunderbird
 exec --no-startup-id unclutter
 

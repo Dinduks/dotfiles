@@ -31,7 +31,7 @@ function install_user_programs {
     cmus-git libmad flac cmusfm xorg-xmodmap xorg-server xorg-xinit openssh \
     the_silver_searcher spotify xorg-xev redshift-gtk-git nautilus pv \
     rxvt-unicode google-chrome thunderbird i3blocks weechat \
-    telegram-desktop-bin xorg-xrdb pkgfile pasystray pulseaudio \
+    xorg-xrdb pkgfile pasystray pulseaudio
     linux-manpages ttf-font-awesome network-manager-applet xorg-xwininfo \
     dwb-git jdk8-openjdk perl-anyevent-i3 i3lock-fancy-dualmonitors-git \
     gnome-disk-utility whois networkmanager-openvpn vlc gthumb chromium unzip \

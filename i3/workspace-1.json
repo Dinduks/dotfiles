@@ -24,25 +24,6 @@
         }
       ],
       "type": "con"
-    },
-    {
-      "border": "pixel",
-      "current_border_width": 1,
-      "floating": "auto_off",
-      "geometry": {
-        "height": 358,
-        "width": 666,
-        "x": 11,
-        "y": 399
-      },
-      "name": "Telegram",
-      "percent": 0.5,
-      "swallows": [
-        {
-          "title": "^Telegram$"
-        }
-      ],
-      "type": "con"
     }
   ]
 }

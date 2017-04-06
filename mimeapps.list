@@ -1,5 +1,4 @@
 [Default Applications]
-x-scheme-handler/tg=telegramdesktop.desktop
 application/pdf=google-chrome.desktop
 image/jpeg=google-chrome.desktop
 image/png=google-chrome.desktop
