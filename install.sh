@@ -31,11 +31,10 @@ function install_user_programs {
     cmus-git libmad flac cmusfm xorg-xmodmap xorg-server xorg-xinit openssh \
     the_silver_searcher spotify xorg-xev redshift-gtk-git nautilus pv \
     rxvt-unicode google-chrome thunderbird i3blocks weechat \
-    xorg-xrdb pkgfile pasystray pulseaudio
+    xorg-xrdb pkgfile pasystray pulseaudio uuid lsof downgrader
     linux-manpages ttf-font-awesome network-manager-applet xorg-xwininfo \
     dwb-git jdk8-openjdk perl-anyevent-i3 i3lock-fancy-dualmonitors-git \
-    gnome-disk-utility whois networkmanager-openvpn vlc gthumb chromium unzip \
-    uuid lsof
+    gnome-disk-utility whois networkmanager-openvpn vlc gthumb chromium unzip
 }
 
 function install_cel {
