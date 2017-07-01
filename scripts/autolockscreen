@@ -1,6 +1,6 @@
 #!/bin/bash
 
-delay=2
+delay=5
 notify_margin=10
 locker="/usr/bin/i3lock-fancy"
 notifier_message="The screen will be locked in 10 seconds"
