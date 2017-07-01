@@ -16,10 +16,10 @@ set laststatus=2
 set list
 set listchars=trail:◃,nbsp:•
 set t_Co=256
-set background=dark
+set background=light
 set ruler
 silent! set transparency=1 " Shut the full cup
-colorscheme monokai
+colorscheme solarized
 "let g:solarized_termcolors=256
 syntax enable
 hi Normal ctermbg=None
