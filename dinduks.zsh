@@ -2,6 +2,7 @@ setopt interactivecomments # Enable bash-style comments (with '#') in the CLI
 set    HIST_IGNORE_SPACE
 
 alias cp="cp -r"
+alias d="docker"
 alias gcc="gcc -Wall -ansi"
 alias grep="grep --color=auto"
 alias grepi="grep -i --color=auto"
