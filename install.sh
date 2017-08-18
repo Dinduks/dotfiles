@@ -26,15 +26,16 @@ function install_yaourt {
 function install_user_programs {
   yaourt -S --needed i3-gaps-git zsh xautolock scrot imagemagick \
     htop curl wget unclutter awk sysstat feh openssh gedit xclip compton rofi \
-    pavucontrol shutter arandr acpi acpid redshift-git gedit libreoffice \
-    thefuck tree ttf-dejavu ttf-arabeyes-fonts slack-desktop alsa-utils dunst \
-    cmus-git libmad flac cmusfm xorg-xmodmap xorg-server xorg-xinit openssh \
-    the_silver_searcher spotify xorg-xev redshift-gtk-git nautilus pv \
-    rxvt-unicode google-chrome thunderbird i3blocks weechat \
-    xorg-xrdb pkgfile pasystray pulseaudio uuid lsof downgrader
-    linux-manpages ttf-font-awesome network-manager-applet xorg-xwininfo \
-    dwb-git jdk8-openjdk perl-anyevent-i3 i3lock-fancy-dualmonitors-git \
-    gnome-disk-utility whois networkmanager-openvpn vlc gthumb chromium unzip
+    pavucontrol shutter arandr acpi acpid gedit libreoffice thefuck tree \
+    ttf-dejavu ttf-arabeyes-fonts slack-desktop alsa-utils dunst-git cmus-git \
+    libmad flac cmusfm xorg-xmodmap xorg-server xorg-xinit openssh sshfs \
+    the_silver_searcher spotify xorg-xev nautilus pv rxvt-unicode \
+    google-chrome thunderbird i3blocks weechat xorg-xrdb pkgfile pulseaudio \
+    uuid lsof downgrader linux-manpages ttf-font-awesome \
+    network-manager-applet xorg-xwininfo jdk8-openjdk perl-anyevent-i3 \
+    i3lock-fancy-dualmonitors-git gnome-disk-utility whois \
+    networkmanager-openvpn vlc gthumb chromium unzip cronie tmux parallel sbt \
+    openconnect chromium docker zip zsh-syntax-highlighting networkmanager
 }
 
 function install_cel {
