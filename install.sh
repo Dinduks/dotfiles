@@ -69,6 +69,7 @@ function install_hr {
 }
 
 function setup_cron_jobs {
+  sudo mkdir -p /etc/cron.d
   for job in cron.d/*; do
     sudo cp $PWD/$job /etc/cron.d
   done
