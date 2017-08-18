@@ -136,6 +136,13 @@ function setup_dunst_config {
   ln -s $PWD/config/dunst/dunstrc ~/.config/dunst/dunstrc &> /dev/null
 }
 
+function setup_networkmanager {
+  sudo systemctl stop netctl
+  sudo systemctl disable netctl
+  sudo systemctl enable NetworkManager
+  sudo systemctl start NetworkManager
+}
+
 # From http://stackoverflow.com/a/3931779
 command_exists () {
   type "$1" &> /dev/null;
@@ -171,3 +178,4 @@ run "setup_i3_config"
 run "setup_zsh_config"
 run "setup_urxvt_config"
 run "setup_i3lock"
+run "setup_networkmanager"
