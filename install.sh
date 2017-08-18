@@ -33,7 +33,7 @@ function install_user_programs {
     google-chrome thunderbird i3blocks weechat xorg-xrdb pkgfile pulseaudio \
     uuid lsof downgrader linux-manpages ttf-font-awesome \
     network-manager-applet xorg-xwininfo jdk8-openjdk perl-anyevent-i3 \
-    i3lock-fancy-dualmonitors-git gnome-disk-utility whois \
+    i3lock-fancy-dualmonitors-git gnome-disk-utility whois pythong-autobgch \
     networkmanager-openvpn vlc gthumb chromium unzip cronie tmux parallel sbt \
     openconnect chromium docker zip zsh-syntax-highlighting networkmanager
 }
