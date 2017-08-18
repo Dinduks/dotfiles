@@ -6,6 +6,10 @@ function install_git {
   sudo pacman -S --needed git
 }
 
+function setup_tmux {
+  ln -s $PWD/.tmux.conf ~ &> /dev/null
+}
+
 function install_yaourt {
   if command_exists yaourt; then
     colored_echo "Yaourt already installed. Skipping."; return;
@@ -148,6 +152,7 @@ function run {
 }
 
 run "install_git"
+run "setup_tmux"
 run "install_yaourt"
 run "install_user_programs"
 run "install_cel"
