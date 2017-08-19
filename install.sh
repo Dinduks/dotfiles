@@ -35,7 +35,7 @@ function install_user_programs {
     libmad flac cmusfm xorg-xmodmap xorg-server xorg-xinit openssh sshfs \
     the_silver_searcher spotify xorg-xev nautilus pv rxvt-unicode \
     google-chrome thunderbird i3blocks weechat xorg-xrdb pkgfile pulseaudio \
-    uuid lsof downgrader linux-manpages ttf-font-awesome pasystray \
+    uuid lsof downgrader linux-manpages ttf-font-awesome pasystray light-git \
     network-manager-applet xorg-xwininfo jdk8-openjdk perl-anyevent-i3 \
     i3lock-fancy-dualmonitors-git gnome-disk-utility whois pythong-autobgch \
     networkmanager-openvpn vlc gthumb chromium unzip cronie tmux parallel sbt \
