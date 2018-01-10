@@ -114,7 +114,7 @@ client.urgent           #FF0000   $bg_color $fg_color
 
 assign [class="Slack"]           → $workspace1
 assign [class=".*Thunderbird.*"] → $workspace2
-assign [class="google-chrome"]   → $workspace3
+assign [class="Firefox"]         → $workspace3
 
 exec --no-startup-id "i3-msg 'workspace 1: ; append_layout ~/.i3/workspace-1.json'"
 
@@ -125,7 +125,7 @@ smart_borders on
 exec --no-startup-id /usr/local/bin/autolockscreen
 exec --no-startup-id compton
 exec --no-startup-id dunst
-exec --no-startup-id google-chrome --restore-last-session
+exec --no-startup-id firefox
 exec --no-startup-id i3-msg 'workspace $workspace1; exec urxvt -e weechat; workspace $workspace1'
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray

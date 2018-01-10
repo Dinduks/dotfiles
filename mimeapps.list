@@ -1,5 +1,5 @@
 [Default Applications]
-application/pdf=google-chrome.desktop
-image/jpeg=google-chrome.desktop
-image/png=google-chrome.desktop
-image/gif=google-chrome.desktop
+application/pdf=firefox.desktop
+image/jpeg=firefox.desktop
+image/png=firefox.desktop
+image/gif=firefox.desktop
