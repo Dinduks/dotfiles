@@ -40,7 +40,7 @@ function install_user_programs {
     i3lock-fancy-dualmonitors-git gnome-disk-utility whois pythong-autobgch \
     networkmanager-openvpn vlc gthumb chromium unzip cronie tmux parallel sbt \
     openconnect chromium docker zip zsh-syntax-highlighting networkmanager \
-    uuid redshift
+    uuid redshift eslint
 }
 
 function install_cel {

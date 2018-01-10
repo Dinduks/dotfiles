@@ -91,8 +91,16 @@ silent! set undodir=~/.tmp,/tmp,/var/tmp
 " Doesn't throw an error if the file doesn't exist
 silent! source .lvimrc
 
+"let g:syntastic_mode_map = { 'mode': 'active',
+      "\ 'active_filetypes': ['python', 'javascript'],
+      "\ 'passive_filetypes': [] }
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
 let g:syntastic_java_javac_executable = "" " Disable Syntastic for Java files
-let g:syntastic_js_checkers=['jslint', 'jshint']
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_eslint_exe='/usr/bin/eslint'
 let g:syntastic_ruby_checkers=['mri']
 
 " Remove trailing whitespaces, replace tabs and non-breaking spaces with spaces
