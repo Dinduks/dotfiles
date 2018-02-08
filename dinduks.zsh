@@ -16,33 +16,19 @@ alias l="ls -alhG"
 alias ll="ls -lhG"
 alias o=xdg-open
 alias path='echo -e ${PATH//:/\\n}'
-alias pgrepi="pgrep -i"
 alias reboot="systemctl reboot"
 alias rgrep="grep -r --color=auto"
 alias rgrepi="grep -ri --color=auto"
 alias rspec="rspec --color"
 alias treea="tree -a"
 alias turnoff="sudo shutdown -h now"
-alias wai="whoami"
 
-apti       () { sudo aptitude install $1 }
-aptr       () { sudo aptitude remove $1 }
-apts       () { aptitude search $1 }
-aptud      () { sudo apt-get update }
-aptug      () { sudo apt-get upgrade }
 cpstat     () { tar c "$1" | pv | tar x -C "$2" }
 loop       () { while sleep 0.2; do $*; done; }
-firstl     () { head -n 1 }
 killport   () { fuser -k $1/tcp }
 kmp        () { kill -9 `pgrep -i $*`; }
-lastl      () { tail -n 1 }
 mkcd       () { mkdir -p "$*"; cd "$*"; }
 myip       () { /sbin/ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}' | sed "s/addr://"; }
-neo4jkill  () { kill `ps aux | grep -i neo | grep -v grep | awk '{printf $2;}'` }
-neo4jstart () { (cd ~/Applications/neo4j-community-1.9.4/ && bin/neo4j start) }
-ql         () { qlmanage -p "$*" >& /dev/null; }
-scheme-run () { scheme < $1 | grep ";Value:" | sed "s/;Value: /Result: /"; }
-trash      () { command mv "$@" ~/.Trash }
 use-java   () { export JAVA_HOME=`/usr/libexec/java_home -v 1.$1` }
 weather    () { curl http://wttr.in/$1 }
 
