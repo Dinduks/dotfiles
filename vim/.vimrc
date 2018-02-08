@@ -54,6 +54,7 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <LEADER><SPACE> :noh<CR>
+vnoremap // y/<C-R>"<CR>
 let g:ctrlp_custom_ignore = { 'dir': '\v[\/](\.git|target)$' }
 
 " Keybindings
