@@ -41,4 +41,5 @@ trash      () { command mv "$@" ~/.Trash }
 use-java   () { export JAVA_HOME=`/usr/libexec/java_home -v 1.$1` }
 weather    () { curl http://wttr.in/$1 }
 
+export VISUAL=vim
 export ZSH_THEME=robbyrussell
