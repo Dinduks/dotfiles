@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script tries to put the computer in hybrid-sleep. In case of failure
+# (e.g. for the lack of swap space), it suspends it instead.
+systemctl hybrid-sleep
+
+if [ $? -ne 0 ]; then
+  systemctl suspend
+fi
