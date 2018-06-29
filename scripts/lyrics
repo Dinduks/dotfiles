@@ -29,6 +29,12 @@ if not ARGV.empty?
       song_elem = doc.xpath("//a").find do |link|
         link.children.first.text =~ /#{song_name}/i
       end
+
+      if song_elem == nil
+        puts "Song not found."
+        exit
+      end
+
       song_rel_url = song_elem.attributes.first[1].value
       song_clean_rel_url = song_rel_url[-song_rel_url.length+3, song_rel_url.length-3]
       song_link = "http://darklyrics.com/#{song_clean_rel_url}"
