@@ -28,7 +28,7 @@ function install_yaourt {
 }
 
 function install_user_programs {
-  yaourt -S --needed i3-gaps-git zsh xautolock scrot imagemagick \
+  yaourt -S --needed i3-gaps zsh xautolock scrot imagemagick \
     htop curl wget unclutter awk sysstat feh openssh gedit xclip compton rofi \
     pavucontrol shutter arandr acpi acpid gedit libreoffice thefuck tree \
     ttf-dejavu ttf-arabeyes-fonts slack-desktop alsa-utils dunst-git cmus-git \
