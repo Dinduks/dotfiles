@@ -37,7 +37,7 @@ function install_user_programs {
     google-chrome thunderbird i3blocks weechat xorg-xrdb pkgfile pulseaudio \
     uuid lsof downgrader linux-manpages ttf-font-awesome pasystray light-git \
     network-manager-applet xorg-xwininfo jdk8-openjdk perl-anyevent-i3 \
-    i3lock-fancy-dualmonitors-git gnome-disk-utility whois pythong-autobgch \
+    i3lock-fancy-dualmonitors-git gnome-disk-utility whois python-autobgch \
     networkmanager-openvpn vlc gthumb chromium unzip cronie tmux parallel sbt \
     openconnect chromium docker zip zsh-syntax-highlighting networkmanager \
     uuid redshift eslint
