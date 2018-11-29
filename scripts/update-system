@@ -35,12 +35,4 @@ git pull
 
 notify-send "Done updating oh-my-zsh."
 
-echocolor "Updating i3-gaps..."
-git clone --branch gaps https://github.com/Airblader/i3.git /tmp/i3
-cd /tmp/i3
-make -j 4
-sudo make install
-i3-msg restart
-notify-send "Done updating i3-gaps. Finished."
-
 echocolor "\nDone."
