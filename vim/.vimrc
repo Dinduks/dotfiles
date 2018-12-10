@@ -63,7 +63,7 @@ map <F5> :tabnew<CR>
 map <F6> :tabclose<CR>
 map <F7> gT
 map <F8> gt
-map  <F9> :w !xclip -selection clipboard<CR><CR>
+map <F9> :w !xclip -selection clipboard<CR><CR>
 map <LEADER>n :NERDTreeToggle<CR>
 map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
