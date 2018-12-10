@@ -16,7 +16,7 @@ set laststatus=2
 set list
 set listchars=trail:◃,nbsp:•
 set t_Co=256
-set background=light
+set background=dark
 set ruler
 silent! set transparency=1 " Shut the full cup
 colorscheme solarized
