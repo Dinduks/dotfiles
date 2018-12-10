@@ -34,3 +34,7 @@ weather    () { curl http://wttr.in/$1 }
 
 export VISUAL=vim
 export ZSH_THEME=robbyrussell
+
+export GOPATH=/home/dinduks/workspace/work/go
+export GOBIN=/home/dinduks/workspace/work/go/bin
+export PATH=$PATH:$GOPATH:$GOBIN
