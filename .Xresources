@@ -32,8 +32,8 @@ URxvt.keysym.M-u: perl:url-select:select_next
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
-#define S_base00        #657b83
-#define S_base0         #839496
+#define S_base00        #ffffff
+#define S_base0         #f1f3f4
 #define S_base1         #93a1a1
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
@@ -43,7 +43,7 @@ URxvt.keysym.M-u: perl:url-select:select_next
 #define S_red           #dc322f
 #define S_magenta       #d33682
 #define S_violet        #6c71c4
-#define S_blue          #268bd2
+#define S_blue          #beddf3
 #define S_cyan          #2aa198
 *background:            rgba:S_base3_dec/aaaa
 *foreground:            S_base00
