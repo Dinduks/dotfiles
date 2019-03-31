@@ -31,6 +31,7 @@ mkcd       () { mkdir -p "$*"; cd "$*"; }
 myip       () { /sbin/ifconfig | grep "inet " | grep -v "127.0.0.1" | awk '{printf $2 "\n"}' | sed "s/addr://"; }
 use-java   () { export JAVA_HOME=`/usr/libexec/java_home -v 1.$1` }
 weather    () { curl http://wttr.in/$1 }
+memesay    () { echo $*|sed -r "s/(.)/\1 /g"|sed 's/^/_/'|sed 's/ $/_/'|sed 's/ \+/ /g'|tr a-z A-Z|xclip -selection clipboard }
 
 export VISUAL=vim
 export ZSH_THEME=robbyrussell
