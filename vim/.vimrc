@@ -7,7 +7,7 @@ set splitbelow
 set splitright
 set number
 set cursorline
-silent! set colorcolumn=80
+set colorcolumn=80
 set mouse=a
 set wildmenu
 set wildmode=list:longest
@@ -18,7 +18,6 @@ set listchars=trail:◃,nbsp:•
 set t_Co=256
 set background=dark
 set ruler
-silent! set transparency=1 " Shut the full cup
 colorscheme solarized
 "let g:solarized_termcolors=256
 syntax enable
@@ -39,6 +38,7 @@ set tabstop=2
 set shiftround
 
 " Events
+au BufNewFile,BufRead *.vue       set  filetype=javascript
 au BufNewFile,BufRead *.html.twig set  filetype=htmldjango
 au BufNewFile,BufRead *.md        setl filetype=markdown
 au BufNewFile,BufRead *.rst.inc   set  filetype=rst
