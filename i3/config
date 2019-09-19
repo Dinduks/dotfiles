@@ -163,7 +163,7 @@ bindcode $mod+Shift+41 floating toggle
 # Open clipmenu
 bindsym Mod1+space exec clipmenu
 
-exec --no-startup-id bgchd -dir ~/Pictures/Wallpapers -bcknd feh -intv 60m
+exec --no-startup-id bgchd -dir ~/Pictures/Wallpapers -bcknd feh -intv 60m -rpl
 
 bindcode $mod+32 exec \
            setxkbmap -layout us -variant intl -option ctrl:nocaps && \
