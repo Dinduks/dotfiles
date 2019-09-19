@@ -45,13 +45,13 @@ URxvt.keysym.M-u: perl:url-select:select_next
 #define S_violet        #6c71c4
 #define S_blue          #beddf3
 #define S_cyan          #2aa198
-*background:            rgba:S_base3_dec/aaaa
+#define S_green         #859900
+*background:            rgba:S_base3_dec/bbbb
 *foreground:            S_base00
 *fadeColor:             S_base3
 *cursorColor:           S_base01
 *pointerColorBackground:S_base1
 *pointerColorForeground:S_base01
-#define S_green         #859900
 *color0:                S_base02
 *color1:                S_red
 *color2:                S_green
