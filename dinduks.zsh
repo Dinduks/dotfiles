@@ -39,3 +39,5 @@ export ZSH_THEME=robbyrussell
 export GOPATH=/home/dinduks/workspace/work/go
 export GOBIN=/home/dinduks/workspace/work/go/bin
 export PATH=$PATH:$GOPATH:$GOBIN
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
