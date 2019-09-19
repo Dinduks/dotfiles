@@ -124,6 +124,7 @@ gaps outer 0
 smart_borders on
 
 exec --no-startup-id /usr/local/bin/autolockscreen
+exec --no-startup-id clipmenud
 exec --no-startup-id compton
 exec --no-startup-id dunst
 exec --no-startup-id firefox
@@ -159,6 +160,8 @@ floating_modifier $mod
 bindcode $mod+Shift+41 floating toggle
 #bindsym $mod+space focus mode_toggle
 
+# Open clipmenu
+bindsym Mod1+space exec clipmenu
 
 exec --no-startup-id bgchd -dir ~/Pictures/Wallpapers -bcknd feh -intv 60m
 

@@ -41,7 +41,8 @@ function install_user_programs {
     networkmanager-openvpn vlc gthumb chromium unzip cronie tmux parallel sbt \
     openconnect chromium docker zip zsh-syntax-highlighting networkmanager \
     uuid redshift eslint nvidia nvidia-settings lib32-nvidia-utils \
-    lib32-nvidia-libg xf86-input-synaptics community/zsh-autosuggestions
+    lib32-nvidia-libg xf86-input-synaptics community/zsh-autosuggestions \
+    clipmenu
 }
 
 function install_cel {
