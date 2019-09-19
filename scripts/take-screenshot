@@ -1,8 +1,0 @@
-#!/bin/bash
-
-date=$(date +"%Y-%m-%d_%H:%M:%S")
-file_name="${date}.png"
-dir="~/Pictures/Screenshots/"
-
-scrot $file_name -e "mv \$f $dir"
-notify-send "Screenshort saved at $dir$file_name" -t 1000
