@@ -159,8 +159,6 @@ floating_modifier $mod
 bindcode $mod+Shift+41 floating toggle
 #bindsym $mod+space focus mode_toggle
 
-# Allows to use ThinkPad Button as a "Menu" button
-exec --no-startup-id xmodmap -e "keycode 156 = Menu Menu Menu Menu"
 
 exec --no-startup-id bgchd -dir ~/Pictures/Wallpapers -bcknd feh -intv 60m
 
