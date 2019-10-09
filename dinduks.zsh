@@ -34,7 +34,7 @@ weather    () { curl http://wttr.in/$1 }
 memesay    () { echo $*|sed -r "s/(.)/\1 /g"|sed 's/^/_/'|sed 's/ $/_/'|sed 's/ \+/ /g'|tr a-z A-Z|xclip -selection clipboard }
 
 export VISUAL=vim
-export ZSH_THEME=robbyrussell
+export ZSH_THEME=pygmalion
 
 export GOPATH=/home/dinduks/workspace/work/go
 export GOBIN=/home/dinduks/workspace/work/go/bin
