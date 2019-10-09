@@ -16,7 +16,7 @@ set laststatus=2
 set list
 set listchars=trail:◃,nbsp:•
 set t_Co=256
-set background=dark
+set background=light
 set ruler
 colorscheme solarized
 "let g:solarized_termcolors=256
