@@ -140,6 +140,11 @@ function setup_dunst_config {
   ln -s $PWD/config/dunst/dunstrc ~/.config/dunst/dunstrc &> /dev/null
 }
 
+function setup_redshift_config {
+  mkdir -p $HOME/.config
+  ln -s $PWD/config/redshift.conf ~/.config/redshift.conf &> /dev/null
+}
+
 function setup_networkmanager {
   sudo systemctl stop netctl
   sudo systemctl disable netctl
@@ -176,6 +181,7 @@ run "setup_git"
 run "create_screenshots_dir"
 run "setup_xresources"
 run "setup_dunst_config"
+run "setup_redshift_config"
 run "setup_mimeapps"
 run "setup_compton_config"
 run "setup_i3_config"
