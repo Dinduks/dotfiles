@@ -146,8 +146,8 @@ bindcode 171 exec "cmus-remote -n; pkill -RTMIN+2 i3blocks"
 bindcode 172 exec "cmus-remote -u; pkill -RTMIN+2 i3blocks"
 bindcode 173 exec "cmus-remote -r; pkill -RTMIN+2 i3blocks"
 bindcode 198 exec "amixer set Capture toggle"
-bindcode 232 exec "light -U 5"
-bindcode 233 exec "light -A 5"
+bindcode 232 exec "light -U 1"
+bindcode 233 exec "light -A 1"
 
 # Hidden floating terminal
 for_window [instance="floating-term"] floating enable;
