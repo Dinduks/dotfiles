@@ -4,7 +4,7 @@ Xft*dpi:              192
 URxvt.depth         : 32
 URxvt.externalBorder: 0
 URxvt.font          : xft:Bitstream Vera Sans Mono:size=8
-URxvt.internalBorder: 2
+URxvt.internalBorder: 35
 URxvt.saveLines     : 9000
 URxvt.scrollBar     : false
 URxvt.utf8          : true
