@@ -28,6 +28,10 @@ URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 URxvt.keysym.M-u: perl:url-select:select_next
 
+URxvt*geometry:                 65x17
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+
 !! https://github.com/solarized/xresources/blob/master/Xresources.light
 #define S_base03        #002b36
 #define S_base02        #073642
