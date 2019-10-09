@@ -28,8 +28,8 @@ function install_yaourt {
 }
 
 function install_user_programs {
-  yaourt -S --needed i3-gaps zsh xautolock imagemagick \
-    htop curl wget unclutter awk sysstat feh openssh gedit xclip compton rofi \
+  yaourt -S --needed i3-gaps zsh xautolock imagemagick dmenu \
+    htop curl wget unclutter awk sysstat feh openssh gedit xclip compton \
     pavucontrol flameshot arandr acpi acpid gedit libreoffice thefuck tree \
     ttf-dejavu ttf-arabeyes-fonts slack-desktop alsa-utils dunst-git cmus-git \
     libmad flac cmusfm xorg-xmodmap xorg-server xorg-xinit openssh sshfs \

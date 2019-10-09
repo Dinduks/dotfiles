@@ -18,7 +18,7 @@ font pango:$font, FontAwesome 8
 bindsym $mod+Return exec urxvt
 bindcode $mod+Shift+24 kill
 
-bindsym $mod+space exec rofi -show run
+bindsym $mod+space exec dmenu_run
 
 bindcode $mod+43 focus left
 bindcode $mod+44 focus down
