@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [[ $1 != "+" && $1 != "-" ]]; then
+  echo "No valid argument specified. Pass '+' to increase the backlight or '-' to decrease it."
+  exit
+fi
+
+brightness=`xbacklight | awk -F'.' '{print $1}'`
+
+if [ $1 == "+" ]; then
+  if (($brightness >= 10)); then
+    light -A 5
+  else
+    light -A 1
+  fi
+fi
+
+if [ $1 == "-" ]; then
+  if (($brightness >= 15)); then
+    light -U 5
+  else
+    light -U 1
+  fi
+fi
+
