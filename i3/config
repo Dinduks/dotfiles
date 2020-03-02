@@ -112,10 +112,11 @@ client.focused_inactive $fg_color $bg_color $fg_color
 client.unfocused        $fg_color $bg_color $fg_color
 client.urgent           #FF0000   $bg_color $fg_color
 
+assign [class=".*discord.*"]     → $workspace1
 assign [class="Slack"]           → $workspace1
 assign [class=".*Thunderbird.*"] → $workspace2
-assign [class="Firefox"]         → $workspace3
-assign [class="Spotify"]         → $workspace4
+assign [class=".*firefox.*"]     → $workspace3
+for_window [class="Spotify"]     move to workspace $workspace4
 
 exec --no-startup-id "i3-msg 'workspace 1: ; append_layout ~/.i3/workspace-1.json'"
 
