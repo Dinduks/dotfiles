@@ -14,6 +14,7 @@ alias kdes="kubectl describe"
 alias klog="kubectl logs"
 alias l="ls -alhG"
 alias ll="ls -lhG"
+alias mkdir="mkdir -p"
 alias o=xdg-open
 alias path='echo -e ${PATH//:/\\n}'
 alias reboot="systemctl reboot"
