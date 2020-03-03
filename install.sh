@@ -42,7 +42,7 @@ function install_user_programs {
     openconnect chromium docker zip zsh-syntax-highlighting networkmanager \
     uuid redshift eslint nvidia nvidia-settings lib32-nvidia-utils \
     lib32-nvidia-libg xf86-input-synaptics community/zsh-autosuggestions \
-    clipmenu
+    clipmenu dfu-programmer avr-libc avr-binutils avr-gcc autorandr
 }
 
 function install_cel {

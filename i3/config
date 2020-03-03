@@ -178,3 +178,5 @@ bindcode $mod+33 exec \
 
 bindcode $mod+Shift+34 move workspace to output left
 bindcode $mod+Shift+35 move workspace to output right
+
+exec autorandr --change
