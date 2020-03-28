@@ -42,3 +42,5 @@ export GOBIN=/home/dinduks/workspace/work/go/bin
 export PATH=$PATH:$GOPATH:$GOBIN
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+RPROMPT="[%D{%y/%m/%d}|%@]"
