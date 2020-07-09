@@ -5,7 +5,9 @@
   a            = add -p
   bi           = bisect
   st           = status -s
+  c            = cherry-pick
   ci           = commit
+  cn           = cherry-pick -n
   co           = checkout
   s            = submodule
   br           = branch
