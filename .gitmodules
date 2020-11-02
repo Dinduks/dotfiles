@@ -112,3 +112,6 @@
 [submodule ".vim/bundle/vim-prettier"]
 	path = vim/.vim/bundle/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule "vim/.vim/bundle/gruvbox"]
+	path = vim/.vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

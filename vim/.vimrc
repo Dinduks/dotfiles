@@ -18,7 +18,8 @@ set listchars=trail:◃,nbsp:•
 set t_Co=256
 set background=light
 set ruler
-colorscheme solarized
+let g:gruvbox_italic=1
+colorscheme gruvbox
 "let g:solarized_termcolors=256
 syntax enable
 hi Normal ctermbg=None
