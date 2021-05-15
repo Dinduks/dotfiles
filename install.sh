@@ -42,7 +42,17 @@ function install_user_programs {
     openconnect chromium docker zip zsh-syntax-highlighting networkmanager \
     uuid redshift eslint nvidia nvidia-settings lib32-nvidia-utils \
     lib32-nvidia-libg xf86-input-synaptics community/zsh-autosuggestions \
-    clipmenu dfu-programmer avr-libc avr-binutils avr-gcc autorandr
+    clipmenu dfu-programmer avr-libc avr-binutils avr-gcc autorandr nvm
+}
+
+function install_node {
+  if command_exists node; then
+    colored_echo "node is already installed. Skipping."; return;
+  fi
+
+  echo "source /usr/share/nvm/init-nvm.sh" >> ~/.zshrc
+  source /usr/share/nvm/init-nvm.sh
+  nvm install 10
 }
 
 function install_cel {
@@ -171,6 +181,7 @@ run "install_git"
 run "setup_tmux"
 run "install_yaourt"
 run "install_user_programs"
+run "install_node"
 run "install_cel"
 run "install_ohmyzsh"
 run "install_hr"
