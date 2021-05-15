@@ -1,5 +1,19 @@
 ## Notes
 
+### Pre-setup on Arch
+Init and update the keyring:
+
+```
+pacman-key --init
+pacman-key --populate
+pacman-key --refresh-keys
+```
+
+Install `base-devel` and `bin-util`, which include some programs used to build
+and install `yaourt`: `pacman -S base-devel binutils`.
+
+Install `sudo` and edit the sudoers file: `pacman -S sudo && vim /etc/sudoers`.
+
 ### Graphics
 #### Auto start X at login
 https://wiki.archlinux.org/index.php/Xinitrc#Autostart_X_at_login
